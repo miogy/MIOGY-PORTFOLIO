@@ -16,7 +16,7 @@ import {
   SiAdobe,
   SiSketchup,
 } from "react-icons/si";
-import ProjectCard from "./ProjectCard/ProjectCard";
+import ProjectCard from "../../component/about/ProjectCard/ProjectCard";
 
 function TechStack() {
   return (

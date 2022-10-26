@@ -89,7 +89,7 @@ const StyledProject = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
-  overflow: scroll;
+  overflow-x: scroll;
   ::-webkit-scrollbar {
     display: none;
   }

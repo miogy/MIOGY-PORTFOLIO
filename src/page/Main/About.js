@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Category from "../../component/about/Category";
-import ContentData from "../../component/about/ContentData";
+import ContentData from "./ContentData";
 import { useState } from "react";
 
 function About() {
