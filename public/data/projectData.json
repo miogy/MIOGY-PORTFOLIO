@@ -1,0 +1,158 @@
+{
+  "content": [
+    {
+      "id": 0,
+      "contentTitle": "ALE6IX",
+      "readme": "https://github.com/miogy/1ST-PROJECT_ALE6IX",
+      "blog": "https://velog.io/@miogy/JUSTCODE-1st-Project-ALE6IX",
+      "data": [
+        {
+          "contentiId": 0,
+          "firstTitle": "프로젝트 설명",
+          "firstAbout": "해외 유명 디자이너 브랜드 ALESSI (http://alessi.co.kr) 를 클론 코딩 하였습니다. 프로젝트 내의 짧은 기간동안 세션 복습과 새로운 기능을 도전해 보고자 디자인은 클론코딩 하였고 기능을 구현하는 데에 중점을 두었습니다. 최대한 라이브러리를 지양하고 모든 기능을 스스로 학습하여 구현하는 것을 지향합니다. 영상에서 보여지는 부분 모두 Fetch함수로 api를 이용하여 백엔드와 통신하여 작업하였습니다.",
+          "team": "개발 인원 및 기간",
+          "date": "2022/8/29 ~ 2022/9/8",
+          "member": "FE 4명, BE 2명",
+          "skill": "적용기술",
+          "lang": "React.js, Javascript",
+          "library": "sass, react-modal, react-dom, react-icons,react-paginate, react-router-dom",
+          "CommunityTools": "Trello, Notion, Zep, Zoom, Slack",
+          "VersionControlTool": "Git",
+
+          "thirdTitle": "프로젝트 구현기능",
+          "thirdAbout": {
+            "all": "메인페이지, 제품 페이지, 상세페이지, 로그인, 회원가입, 장바구니, 검색 페이지",
+            "team": "Main-page 섹션별 컴포넌트화 작업, Detail-page 구매부분과 상품문의/후기 컴포넌트화 작업, Navbar 레이아웃, 스타일링, mock-up데이터 카테고리 연결",
+            "roleContent": [
+              {
+                "id": 0,
+                "role": "메인페이지",
+                "work": "이미지 슬라이드 : ",
+                "url": "https://user-images.githubusercontent.com/99234582/190320114-96894487-8c1e-407b-8428-4b321ea5b69b.mp4",
+                "text": "UI및 기능 구현: 슬라이드용 이미지를 mock-up 데이터로 작업. 메인 슬라이드 내에 버튼, 도트, 이미지 컨텐츠 컴포넌트화, setInterval을 사용한 무한 슬라이드"
+              },
+              {
+                "id": 1,
+                "role": "메인페이지",
+                "work": "섹션 : ",
+                "url": "https://user-images.githubusercontent.com/99234582/190320314-a0c6337d-0434-4a65-b3d5-93e79ff98679.mp4",
+                "text": "UI및 기능 구현: 신 제품, 추천 제품 fetch함수를 이용하여 api 호출하고 GET메서드로 데이터를 연결, React-router-dom을 사용하여 Link 이동"
+              },
+              {
+                "id": 2,
+                "role": "제품페이지",
+                "work": "상품문의 및 상품후기 : ",
+                "url": "https://user-images.githubusercontent.com/99234582/190320711-3e057832-9f6e-4790-95fd-7efdeb908999.mp4",
+                "text": "UI및 기능 구현: fetch함수를 이용하여 api 호출하고 POST메서드를 이용하여 추가, GET메서드를 이용하여 리스트 불러오기, DELETE메서드를 이용하여 삭제구현."
+              },
+              {
+                "id": 3,
+                "role": "Header",
+                "work": "Navbar : ",
+                "url": "https://user-images.githubusercontent.com/99234582/190320661-f85c43c0-52d5-49db-b9bb-4cb38d528318.mp4",
+                "text": "UI및 기능 구현: mock-up데이터를 이용한 sub-nav구현"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "contentTitle": "STARBOX",
+      "data": [
+        {
+          "contentId": 1,
+          "firstTitle": "프로젝트 소개",
+          "firstAbout": "이전 프로젝트였던 E-commerce에서 좀더 다양한 기능을 접할수 있는 사이트를 고려하던 중 기본 CRUD는 물론 새로운 기능과 UI를 접할 수 있는 MEGABOX를 선정하게 되었습니다. fetch함수를 이용하여 api로 연결하여 데이터를 받아오고 UI부분도 스스로 sass를 이용하여 구현하였습니다.",
+          "team": "개발 인원 및 기간",
+          "date": "2022/09/19~2022/09/30",
+          "member": "FE 4명, BE 2명",
+
+          "skill": "적용기술",
+          "lang": "React.js, Javascript",
+          "library": "React js, sass, styled-component",
+          "CommunityTools": "Trello, Notion, Zep, Zoom, Slack",
+          "Version Control Tool": "Git",
+          "thirdTitle": "프로젝트 구현기능",
+          "thirdAbout": {
+            "roleContent": [
+              {
+                "id": 0,
+                "role": "UI ",
+                "work": "Header : ",
+                "url": "https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4",
+                "text": "Nav bar 레이아웃 및 UI 스타일 구현, 로고, Subnav bar Tab구현, 로그인 pop-up 모달 구현, 회원가입 컴포넌트 별 레이아웃 및 스타일 구현, 아이디/비밀번호 찾기 레이아웃 및 스타일 구현, user의 이동경로에 따른 UI구현"
+              },
+              {
+                "id": 1,
+                "role": "Login",
+                "work": "로그인/로그아웃 : ",
+                "url": "https://user-images.githubusercontent.com/99234582/196129020-3036c6bf-9272-4f70-beee-6fde11cc0b1c.mp4",
+                "text": "fetch를 이용하여 post로 user정보 보내기, DB의 user 정보 데이터를 비교 후 token받아서 localstorage에 담기, 로그아웃을 클릭하면 이벤트핸들러를 이용하여 localstorage에 token을 지우기"
+              },
+              {
+                "id": 2,
+                "role": "Signup",
+                "step": [
+                  {
+                    "id": 0,
+                    "title": "step.01 휴대폰 인증",
+                    "url": "https://user-images.githubusercontent.com/99234582/196132040-c2019575-20fd-40c3-a423-99737cb4cb95.mp4",
+                    "content": "입력한 user정보를 담고, fetch함수를 이용하여 POST메서드로 정보를 보내고 받은 인증번호와 입력했던 휴대폰 번호를 보내준다."
+                  },
+                  {
+                    "id": 1,
+                    "title": "step.02 약관 동의",
+                    "url": "https://user-images.githubusercontent.com/99234582/196134181-fc848814-cc87-4dfb-8c40-c3bab8f11fad.mp4",
+                    "content": "체크박스를 이용하여 필수체크선택시 다음 step으로 넘어간다. 전체 선택시 체크박스 전체 선택 또는 하나 해제시 전체 선택 해제"
+                  },
+                  {
+                    "id": 2,
+                    "title": "step.03 정보 입력후 가입완료",
+                    "url": "https://user-images.githubusercontent.com/99234582/196135319-8d243855-88f8-4304-98de-a4ff29592f6b.mp4",
+                    "content": "step01에 입력된 user정보를 불러오고 아이디를 DB에서 비교후 중복확인을 한다. 비밀번호와 이메일은 유효성 검사후 다음 step으로 이동한다. 가입완료 클릭시 메인페이지로 이동"
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "role": "Navbar",
+                "url": "https://user-images.githubusercontent.com/99234582/190320661-f85c43c0-52d5-49db-b9bb-4cb38d528318.mp4",
+                "text": "Nav Link를 이용한 페이지별 링크 연결, user의 location정보 UI구현 및 링크 연결"
+              },
+              {
+                "id": 4,
+                "role": "Sub nav",
+                "text": "클릭시 Drop-down메뉴 리스트 구현 close버튼으로 닫기, 카테고리별 링크 연결"
+              },
+              {
+                "id": 5,
+                "role": "User find & Password find",
+                "work": "",
+                "url": "https://user-images.githubusercontent.com/99234582/196136005-61c8834b-b045-4915-8bad-77875ba85255.mp4",
+                "text": "fetch함수를 이용하여 POST메서드로 user정보를 보낸후 DB에서 비교하여 아이디 또는 임시 비밀번호를 받는다."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "project": {
+    "projectMain": [
+      {
+        "id": 0,
+        "title": "ALE6IX",
+        "src": "https://velog.velcdn.com/images/ch00ng10000/post/3ff906f7-d6ea-43a6-92f1-fc37b06e3eae/image.png",
+        "url": "https://youtu.be/X2f3YSx6h0Q"
+      },
+      {
+        "id": 1,
+        "title": "STARBOX",
+        "src": "https://user-images.githubusercontent.com/99234582/196137091-a6c63d61-c91f-4e6d-a4d9-ecd1097736e6.png",
+        "url": "https://www.youtube.com/watch?v=WFLoaP3cGkg"
+      }
+    ]
+  }
+}
