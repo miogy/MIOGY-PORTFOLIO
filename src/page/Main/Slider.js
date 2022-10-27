@@ -7,7 +7,6 @@ import "swiper/scss";
 import "swiper/scss/pagination";
 import "swiper/scss/navigation";
 
-import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 function Slider() {
