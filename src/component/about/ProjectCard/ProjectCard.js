@@ -1,5 +1,5 @@
 import { AiFillPlayCircle } from "react-icons/ai";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import ProjectData from "./ProjectData";
 
 import styled from "styled-components";
@@ -9,6 +9,52 @@ function ProjectCard() {
   const [projectTab, setProjectTab] = useState(0);
   const [prjModal, setPrjModal] = useState(false);
 
+  const [isDrag, setIsDrag] = useState(false);
+  const [startX, setStartX] = useState();
+
+  const scrollRef = useRef(null);
+
+  const onDragStart = (e) => {
+    // e.preventDefault();
+    setIsDrag(true);
+    setStartX(e.pageX + scrollRef.current.scrollLeft);
+  };
+
+  const onDragEnd = () => {
+    setIsDrag(false);
+  };
+
+  const onDragMove = (e) => {
+    if (isDrag) {
+      const { scrollWidth, clientWidth, scrollLeft } = scrollRef.current;
+
+      scrollRef.current.scrollLeft = startX - e.pageX;
+
+      if (scrollLeft === 0) {
+        setStartX(e.pageX);
+        console.log(e.pageX);
+      } else if (scrollWidth <= clientWidth + scrollLeft) {
+        setStartX(e.pageX + scrollLeft);
+        console.log(e.pageX + scrollLeft);
+      }
+    }
+  };
+
+  const throttle = (func, ms) => {
+    let throttled = false;
+    return (...args) => {
+      if (!throttled) {
+        throttled = true;
+        setTimeout(() => {
+          func(...args);
+          throttled = false;
+        }, ms);
+      }
+    };
+  };
+
+  const delay = 100;
+  const onThrottleDragMove = throttle(onDragMove, delay);
   const ProjectCardTab = {
     0: (
       <ProjectData
@@ -34,7 +80,13 @@ function ProjectCard() {
       });
   }, []);
   return (
-    <StyledProject>
+    <StyledProject
+      onMouseDown={onDragStart}
+      onMouseMove={onThrottleDragMove}
+      onMouseUp={onDragEnd}
+      onMouseLeave={onDragEnd}
+      ref={scrollRef}
+    >
       {/* {console.log(project)} */}
       {project.project?.projectMain?.map((projectData) => {
         return (
@@ -86,10 +138,10 @@ export default ProjectCard;
 
 const StyledProject = styled.div`
   width: 100%;
-  margin: 0 auto;
+
   display: flex;
   justify-content: flex-start;
-  overflow-x: scroll;
+  overflow: scroll;
   ::-webkit-scrollbar {
     display: none;
   }

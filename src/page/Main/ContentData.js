@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import {
   MdOutlineLaptopMac,
   MdVideoCameraBack,
@@ -271,9 +272,9 @@ const ContentWrap = styled.div`
   }
 `;
 const StyledProjectCard = styled(ProjectCard)`
-  width: 100%;
+  /* width: 100%;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; */
 `;
 const WorkexperienceContent = styled.div`
   width: 50%;

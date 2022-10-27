@@ -43,34 +43,34 @@ function Footer() {
 }
 export default Footer;
 const FooterWrap = styled.div`
-  position: absolute;
-  top: 1800px;
+  position: fixed;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 128px;
-  background-color: #efefef;
+  height: 100px;
+  background-color: lightgray;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   .footerContainer {
+    width: 30%;
     font-size: 1.2em;
-    margin: 0 5% 0 5%;
     dt {
       margin-bottom: 6px;
     }
     dd {
       font-size: 0.8em;
       margin: 0;
-      color: #666;
       .styleNone {
         text-decoration: none;
         list-style: none;
-        color: #333;
+        color: #999;
         margin: 0 5px 0 5px;
         cursor: pointer;
         &:hover {
           color: #222;
+          font-weight: 600;
         }
       }
     }

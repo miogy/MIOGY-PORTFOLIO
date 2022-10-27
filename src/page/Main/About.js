@@ -19,25 +19,25 @@ function About() {
 export default About;
 
 const AboutWrap = styled.div`
-  position: absolute;
+  /* position: absolute;
   top: 890px;
   left: 0;
   width: 100%;
-  padding-top: 36px;
-  padding-bottom: 36px;
-  background-color: #fff;
+  padding-top: 36px; s
+  padding-bottom: 36px; */
+  /* background-color: #fff; */
   .about-container {
-    width: 58%;
+    /* width: 58%;
     margin: 0 auto;
     text-align: start;
     h3 {
       font: 36px/47px "나눔고딕", sans-serif;
       letter-spacing: -0.12em;
       color: #555;
-    }
+    } */
   }
 `;
 const AboutContent = styled.div`
-  margin: 0 auto;
-  text-align: start;
+  /* margin: 0 auto;
+  text-align: start; */
 `;

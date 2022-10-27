@@ -3,35 +3,49 @@ import styled from "styled-components";
 function Category({ tab, setTab }) {
   return (
     <Title>
-      <ul>
+      <ul
+        onClick={() => {
+          window.scrollTo({ top: 1000, behavior: "smooth" });
+        }}
+      >
         <li
           className={`${tab === 0 ? "active" : ""}`}
-          onClick={() => setTab(0)}
+          onClick={() => {
+            setTab(0);
+          }}
         >
           Tech Stack,
         </li>
 
         <li
           className={`${tab === 2 ? "active" : ""}`}
-          onClick={() => setTab(2)}
+          onClick={() => {
+            setTab(2);
+          }}
         >
           Design Skill,
         </li>
         <li
           className={`${tab === 1 ? "active" : ""}`}
-          onClick={() => setTab(1)}
+          onClick={() => {
+            setTab(1);
+          }}
         >
           Workexperience,
         </li>
         <li
           className={`${tab === 3 ? "active" : ""}`}
-          onClick={() => setTab(3)}
+          onClick={() => {
+            setTab(3);
+          }}
         >
           Project,
         </li>
         <li
           className={`${tab === 4 ? "active" : ""}`}
-          onClick={() => setTab(4)}
+          onClick={() => {
+            setTab(4);
+          }}
         >
           Toy Project,
         </li>

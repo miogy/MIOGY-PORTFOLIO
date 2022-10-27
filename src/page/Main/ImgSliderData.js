@@ -13,13 +13,7 @@ const ImgSliderData = [
     title: "Fashion",
     text: "",
   },
-  {
-    id: 2,
-    url: "/detaile",
-    src: "https://images.unsplash.com/photo-1557777586-f6682739fcf3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-    title: "G r a p h i c  Portfolio",
-    text: "",
-  },
+
   {
     id: 3,
     url: "/detaile",
@@ -27,13 +21,7 @@ const ImgSliderData = [
     title: "",
     text: "",
   },
-  {
-    id: 4,
-    url: "/detaile",
-    src: "https://images.unsplash.com/photo-1522322659370-3c98da30c99c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1012&q=80",
-    title: "",
-    text: "",
-  },
+
   {
     id: 5,
     url: "/detaile",
