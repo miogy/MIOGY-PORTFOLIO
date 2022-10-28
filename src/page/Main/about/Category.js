@@ -4,8 +4,8 @@ function Category({ tab, setTab }) {
   return (
     <Title>
       <ul
-        onClick={() => {
-          window.scrollTo({ top: 1000, behavior: "smooth" });
+        onClick={(e) => {
+          window.scrollTo({ top: 800, behavior: "smooth" });
         }}
       >
         <li
@@ -56,23 +56,42 @@ function Category({ tab, setTab }) {
 export default Category;
 
 const Title = styled.div`
-  width: 100%;
-  ul {
-    width: 90%;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding: 0;
-    li {
-      padding-right: 20px;
-      margin-bottom: 6px;
-      text-decoration: none;
-      list-style: none;
-      font-size: 42px;
-      height: 60px;
+  @media screen and (min-width: 581px) {
+    width: 100%;
+    ul {
+      width: 90%;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      li {
+        padding-right: 20px;
+        text-decoration: none;
+        list-style: none;
+        font-size: 2.8em;
+        height: 60px;
+      }
+      .active {
+        border-bottom: 3px solid #000;
+      }
     }
-    .active {
-      border-bottom: 3px solid #000;
+  }
+  @media screen and (max-width: 580px) and (min-width: 230px) {
+    width: 100%;
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      li {
+        padding-right: 20px;
+        text-decoration: none;
+        list-style: none;
+        font-size: 1.6em;
+        height: 36px;
+      }
+      .active {
+        border-bottom: 2px solid #000;
+      }
     }
   }
 `;

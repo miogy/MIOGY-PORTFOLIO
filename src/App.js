@@ -26,7 +26,19 @@ function App() {
 export default App;
 
 const StyledApp = styled.div`
-  width: 100%;
-  text-align: center;
-  position: relative;
+  @media screen and (min-width: 981px) {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  @media screen and (max-width: 980px) and (min-width: 581px) {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  @media screen and (max-width: 580px) and (min-width: 230px) {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
 `;

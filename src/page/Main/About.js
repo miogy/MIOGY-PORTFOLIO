@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Category from "../../component/about/Category";
+import Category from "./about/Category";
 import ContentData from "./ContentData";
 import { useState } from "react";
 
@@ -11,7 +11,7 @@ function About() {
       <div className="about-container">
         <h3>About</h3>
         <Category tab={tab} setTab={setTab} />
-        <AboutContent>{ContentData[tab]}</AboutContent>
+        <div className="contentContainer">{ContentData[tab]}</div>
       </div>
     </AboutWrap>
   );
@@ -19,25 +19,60 @@ function About() {
 export default About;
 
 const AboutWrap = styled.div`
-  /* position: absolute;
-  top: 890px;
-  left: 0;
-  width: 100%;
-  padding-top: 36px; s
-  padding-bottom: 36px; */
-  /* background-color: #fff; */
-  .about-container {
-    /* width: 58%;
-    margin: 0 auto;
-    text-align: start;
+  @media screen and (min-width: 981px) {
+    width: 100%;
+    padding-bottom: 10%;
     h3 {
-      font: 36px/47px "나눔고딕", sans-serif;
+      float: left;
+      font-size: 2.8em;
+      font-weight: 300;
       letter-spacing: -0.12em;
-      color: #555;
-    } */
+      color: #999;
+    }
   }
-`;
-const AboutContent = styled.div`
-  /* margin: 0 auto;
-  text-align: start; */
+  @media screen and (max-width: 980px) and (min-width: 581px) {
+    width: 100%;
+    padding-bottom: 10%;
+    h3 {
+      float: left;
+      font-size: 2.8em;
+      font-weight: 300;
+      letter-spacing: -0.12em;
+      color: #999;
+    }
+    .contentContainer {
+      width: 580px;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 980px) and (min-width: 581px) {
+    width: 100%;
+    padding-bottom: 10%;
+    h3 {
+      float: left;
+      font-size: 2.8em;
+      font-weight: 300;
+      letter-spacing: -0.12em;
+      color: #999;
+    }
+    .contentContainer {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 580px) and (min-width: 230px) {
+    width: 100%;
+    padding-bottom: 10%;
+    h3 {
+      float: left;
+      font-size: 2.8em;
+      font-weight: 300;
+      letter-spacing: -0.12em;
+      color: #999;
+    }
+    .contentContainer {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
 `;

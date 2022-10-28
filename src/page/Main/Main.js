@@ -19,21 +19,51 @@ function Main() {
 export default Main;
 
 const StyledMain = styled.div`
-  width: 100%;
-  .mainContentWrap {
-    @media screen and (min-width: 1100px) {
-      width: 1330px;
+  @media screen and (min-width: 981px) {
+    width: 100%;
+    .mainContentWrap {
+      width: 95%;
       margin: 0 auto;
       position: relative;
       .sliderComponentWrap {
         width: 100%;
-        /* background-color: #999; */
+        margin-bottom: 5%;
       }
       .aboutComponentWrap {
         width: 980px;
         margin: 0 auto;
-        margin-bottom: 200px;
-        /* background-color: #333; */
+      }
+    }
+  }
+  @media screen and (max-width: 980px) and (min-width: 581px) {
+    width: 100%;
+    .mainContentWrap {
+      /* width: 95%; */
+      margin: 0 auto;
+      position: relative;
+      .sliderComponentWrap {
+        width: 100%;
+        margin-bottom: 5%;
+      }
+      .aboutComponentWrap {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+  @media screen and (max-width: 580px) and (min-width: 230px) {
+    width: 100%;
+    .mainContentWrap {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      .sliderComponentWrap {
+        width: 100%;
+        margin-bottom: 5%;
+      }
+      .aboutComponentWrap {
+        width: 90%;
+        margin: 0 auto;
       }
     }
   }
