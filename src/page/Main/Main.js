@@ -19,15 +19,27 @@ function Main() {
 export default Main;
 
 const StyledMain = styled.div`
-  @media screen and (min-width: 981px) {
+  @media screen and (min-width: 1330px) {
     width: 100%;
     .mainContentWrap {
-      width: 95%;
+      width: 90%;
       margin: 0 auto;
       position: relative;
       .sliderComponentWrap {
         width: 100%;
-        margin-bottom: 5%;
+      }
+      .aboutComponentWrap {
+        width: 1100px;
+        margin: 0 auto;
+      }
+    }
+  }
+  @media screen and (max-width: 1329px) and (min-width: 990px) {
+    width: 100%;
+    .mainContentWrap {
+      width: 100%;
+      .sliderComponentWrap {
+        width: 100%;
       }
       .aboutComponentWrap {
         width: 980px;
@@ -35,15 +47,12 @@ const StyledMain = styled.div`
       }
     }
   }
-  @media screen and (max-width: 980px) and (min-width: 581px) {
+  @media screen and (max-width: 989px) and (min-width: 580px) {
     width: 100%;
     .mainContentWrap {
-      /* width: 95%; */
-      margin: 0 auto;
-      position: relative;
+      width: 100%;
       .sliderComponentWrap {
         width: 100%;
-        margin-bottom: 5%;
       }
       .aboutComponentWrap {
         width: 90%;
@@ -51,15 +60,13 @@ const StyledMain = styled.div`
       }
     }
   }
-  @media screen and (max-width: 580px) and (min-width: 230px) {
+  @media screen and (max-width: 579px) and (min-width: 230px) {
     width: 100%;
     .mainContentWrap {
       width: 100%;
-      margin: 0 auto;
-      position: relative;
+
       .sliderComponentWrap {
         width: 100%;
-        margin-bottom: 5%;
       }
       .aboutComponentWrap {
         width: 90%;

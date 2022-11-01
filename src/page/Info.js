@@ -33,6 +33,7 @@ function Info() {
         <SiAdobeacrobatreader /> <strong>PDF로 보기</strong>
       </div>
       <HTMLFlipBook
+        className="flipbookWrap"
         showCover={false}
         onFlip={updatePage}
         width={600}
@@ -146,20 +147,20 @@ const StyledInfo = styled.div`
       padding-left: 5px;
     }
   }
+
   .page {
     max-width: 100%;
     max-height: 100%;
     margin: 0 auto;
     background-color: white;
     border: 1px solid lightgray;
-
+    box-shadow: 10px 5px 5px lightgray;
     img {
       width: 90%;
       padding-top: 10%;
       margin: 0 auto;
     }
   }
-
   .info-page {
     width: 100%;
     position: absolute;

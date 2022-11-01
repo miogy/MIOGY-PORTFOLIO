@@ -39,19 +39,81 @@ function Slider() {
 export default Slider;
 
 const StyledSwiper = styled(Swiper)`
-  @media screen and (min-width: 981px) {
-    width: 90%;
-  }
-  @media screen and (max-width: 980px) and (min-width: 581px) {
-    width: 100%;
+  @media screen and (min-width: 1330px) {
+    width: 1330px;
+    margin: 0 auto;
+    .swiper-button-prev {
+      font-weight: bold;
+      color: #333;
+    }
+    .swiper-button-next {
+      font-weight: bold;
+      color: #333;
+    }
     .sliderImg {
       width: 100%;
     }
   }
-  @media screen and (max-width: 580px) and (min-width: 230px) {
-    width: 100%;
+  @media screen and (max-width: 1329px) and (min-width: 1100px) {
+    width: 1100px;
+    margin: 0 auto;
+    .swiper-button-prev {
+      font-weight: bold;
+      color: #333;
+    }
+    .swiper-button-next {
+      font-weight: bold;
+      color: #333;
+    }
     .sliderImg {
       width: 100%;
     }
+  }
+  @media screen and (max-width: 1099px) and (min-width: 980px) {
+    width: 980px;
+    margin: 0 auto;
+    .swiper-button-prev {
+      font-weight: bold;
+      color: #333;
+    }
+    .swiper-button-next {
+      font-weight: bold;
+      color: #333;
+    }
+    .sliderImg {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 979px) and (min-width: 580px) {
+    width: 100%;
+    margin: 0 auto;
+    .swiper-button-prev {
+      font-weight: bold;
+      color: #333;
+    }
+    .swiper-button-next {
+      font-weight: bold;
+      color: #333;
+    }
+    .sliderImg {
+      width: 100%;
+    }
+    padding-top: 5%;
+  }
+  @media screen and (max-width: 579px) and (min-width: 230px) {
+    width: 100%;
+    margin: 0 auto;
+    .swiper-button-prev {
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0);
+    }
+    .swiper-button-next {
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0);
+    }
+    .sliderImg {
+      width: 100%;
+    }
+    padding-top: 5%;
   }
 `;

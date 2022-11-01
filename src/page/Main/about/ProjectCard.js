@@ -1,13 +1,13 @@
 import { AiFillPlayCircle } from "react-icons/ai";
 import { useState, useEffect, useRef } from "react";
-// import ProjectData from "../../../page/Main/ProjectData";
+import ProjectData from "./ProjectData";
 
 import styled from "styled-components";
 
 function ProjectCard() {
   const [project, setProject] = useState([]);
-  // const [projectTab, setProjectTab] = useState(0);
-  // const [prjModal, setPrjModal] = useState(false);
+  const [projectTab, setProjectTab] = useState(0);
+  const [prjModal, setPrjModal] = useState(false);
 
   const [isDrag, setIsDrag] = useState(false);
   const [startX, setStartX] = useState();
@@ -55,22 +55,22 @@ function ProjectCard() {
 
   const delay = 100;
   const onThrottleDragMove = throttle(onDragMove, delay);
-  // const ProjectCardTab = {
-  //   0: (
-  //     <ProjectData
-  //       projectTab={projectTab}
-  //       setPrjModal={setPrjModal}
-  //       project={project.content}
-  //     />
-  //   ),
-  //   1: (
-  //     <ProjectData
-  //       projectTab={projectTab}
-  //       setPrjModal={setPrjModal}
-  //       project={project.content}
-  //     />
-  //   ),
-  // };
+  const ProjectCardTab = {
+    0: (
+      <ProjectData
+        projectTab={projectTab}
+        setPrjModal={setPrjModal}
+        project={project.content}
+      />
+    ),
+    1: (
+      <ProjectData
+        projectTab={projectTab}
+        setPrjModal={setPrjModal}
+        project={project.content}
+      />
+    ),
+  };
 
   useEffect(() => {
     fetch("/data/projectData.json")
@@ -105,9 +105,9 @@ function ProjectCard() {
                   <span
                     className="projectPage"
                     onClick={() => {
-                      // window.scrollTo({ top: 0, behavior: "smooth" });
-                      // setProjectTab(projectData.id);
-                      // setPrjModal(true);
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                      setProjectTab(projectData.id);
+                      setPrjModal(true);
                     }}
                   >
                     프로젝트 소개
@@ -115,6 +115,24 @@ function ProjectCard() {
                 </dt>
                 <dd className="cardcontainer">
                   <p className="cardTitle">{projectData.title}</p>
+                  <p>
+                    <button
+                      className="cardBtn"
+                      onClick={() => {
+                        window.location.href = `${projectData.readme}`;
+                      }}
+                    >
+                      Readme
+                    </button>
+                    <button
+                      className="cardBtn"
+                      onClick={() => {
+                        window.location.href = `${projectData.blog}`;
+                      }}
+                    >
+                      Blog
+                    </button>
+                  </p>
                   <p
                     className="projectLink"
                     onClick={() => {
@@ -129,16 +147,18 @@ function ProjectCard() {
           </div>
         );
       })}
-      {/* {prjModal === true ? (
-        <div className="projectCardModal">{ProjectCardTab[projectTab]}</div>
-      ) : null} */}
+      {prjModal === true ? (
+        <div className="prjModalWrap">
+          <div className="projectCardModal">{ProjectCardTab[projectTab]}</div>
+        </div>
+      ) : null}
     </StyledProject>
   );
 }
 export default ProjectCard;
 
 const StyledProject = styled.div`
-  @media screen and (min-width: 981px) {
+  @media screen and (min-width: 1100px) {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -155,6 +175,10 @@ const StyledProject = styled.div`
       .cardWrap {
         .cardContainer {
           width: 100%;
+          p {
+            margin-right: 10px;
+            margin-left: 10px;
+          }
           .projectImg {
             position: relative;
             .imgContent {
@@ -183,12 +207,111 @@ const StyledProject = styled.div`
           }
           .cardcontainer {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             .cardTitle {
+              font-size: 20px;
+              font-weight: 600;
             }
             .projectLink {
               cursor: pointer;
+            }
+            .cardBtn {
+              width: 68px;
+              height: 30px;
+              border: 1px solid lightgray;
+              border-radius: 5px;
+              background-color: #fff;
+              margin: 3px;
+              cursor: pointer;
+              &:hover {
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+    .projectCardModal {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.1);
+      z-index: 10;
+    }
+  }
+
+  @media screen and (max-width: 1099px) and (min-width: 580px) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    overflow: scroll;
+    cursor: pointer;
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    .projectWrap {
+      margin-right: 20px;
+      border: 1px solid lightgray;
+      border-radius: 15px;
+      .cardWrap {
+        padding: 0 6px 0 6px;
+        .cardContainer {
+          width: 100%;
+          .projectImg {
+            position: relative;
+            .imgContent {
+              width: 400px;
+              height: 240px;
+            }
+            .projectPage {
+              width: 160px;
+              height: 30px;
+              position: absolute;
+              top: 50%;
+              left: 35%;
+              border: 1px solid lightgray;
+              border-radius: 5px;
+              background-color: #fff;
+              display: none;
+              cursor: pointer;
+            }
+            &:hover .projectPage {
+              display: block;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #999;
+            }
+          }
+          .cardcontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+              margin: 0 5px 0 5px;
+            }
+            .cardTitle {
+              font-size: 18px;
+              font-weight: 600;
+            }
+            .projectLink {
+              font-size: 16px;
+              cursor: pointer;
+            }
+            .cardBtn {
+              width: 60px;
+              height: 26px;
+              border: 1px solid lightgray;
+              border-radius: 5px;
+              background-color: #fff;
+              margin: 3px;
+              cursor: pointer;
+              &:hover {
+                font-weight: 600;
+              }
             }
           }
         }
@@ -204,8 +327,8 @@ const StyledProject = styled.div`
       z-index: 10;
     }
   }
-  @media screen and (max-width: 980px) and (min-width: 581px) {
-    width: 90%;
+  @media screen and (max-width: 579px) and (min-width: 230px) {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     overflow: scroll;
@@ -214,15 +337,13 @@ const StyledProject = styled.div`
       display: none;
     }
     .projectWrap {
-      width: 400px;
-      height: 280px;
-      margin-right: 10px;
+      margin-right: 20px;
       border: 1px solid lightgray;
       border-radius: 15px;
       .cardWrap {
         padding: 0 6px 0 6px;
         .cardContainer {
-          width: 90%;
+          width: 100%;
           .projectImg {
             position: relative;
             .imgContent {
@@ -251,12 +372,31 @@ const StyledProject = styled.div`
           }
           .cardcontainer {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
+            p {
+              margin: 0 3px 0 3px;
+            }
             .cardTitle {
+              font-size: 14px;
+              font-weight: 600;
             }
             .projectLink {
+              font-size: 14px;
               cursor: pointer;
+            }
+            .cardBtn {
+              width: 56px;
+              height: 22px;
+              font-size: 12px;
+              border: 1px solid lightgray;
+              border-radius: 5px;
+              background-color: #fff;
+              margin: 3px;
+              cursor: pointer;
+              &:hover {
+                font-weight: 600;
+              }
             }
           }
         }

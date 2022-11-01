@@ -24,10 +24,14 @@ function DesignSkill() {
           그래픽
         </dt>
         <dd className="contentText">
-          <SiAdobephotoshop className="titleIcon" />
-          Photoshop,
-          <SiAdobeillustrator className="titleIcon" />
-          Illustrator
+          <p className="skillContentWrap">
+            <SiAdobephotoshop className="titleIcon" />
+            Photoshop,
+          </p>
+          <p className="skillContentWrap">
+            <SiAdobeillustrator className="titleIcon" />
+            Illustrator
+          </p>
         </dd>
       </dl>
       <dl className="contentsContainer">
@@ -36,12 +40,18 @@ function DesignSkill() {
           영상편집
         </dt>
         <dd className="contentText">
-          <SiAdobeaftereffects className="titleIcon" />
-          After Effect,
-          <SiAdobe className="titleIcon" />
-          Animate,
-          <MdVideoCameraBack className="titleIcon " />
-          Movavi Video Editor
+          <p className="skillContentWrap">
+            <SiAdobeaftereffects className="titleIcon" />
+            After Effect,
+          </p>
+          <p className="skillContentWrap">
+            <SiAdobe className="titleIcon" />
+            Animate,
+          </p>
+          <p className="skillContentWrap">
+            <MdVideoCameraBack className="titleIcon " />
+            Movavi Video Editor
+          </p>
         </dd>
       </dl>
       <dl className="contentsContainer">
@@ -50,10 +60,14 @@ function DesignSkill() {
           Web / App
         </dt>
         <dd className="contentText">
-          <SiAdobexd className="titleIcon" />
-          Adode XD,
-          <SiFigma className="titleIcon" />
-          Figma
+          <p className="skillContentWrap">
+            <SiAdobexd className="titleIcon" />
+            Adode XD,
+          </p>
+          <p className="skillContentWrap">
+            <SiFigma className="titleIcon" />
+            Figma
+          </p>
         </dd>
       </dl>
       <dl className="contentsContainer">
@@ -62,11 +76,13 @@ function DesignSkill() {
           그외
         </dt>
         <dd className="contentText">
-          <SiSketchup className="titleIcon" />
-          SketchUp
-          <span className="textSmall">3D설계도면</span>
+          <p className="skillContentWrap">
+            <SiSketchup className="titleIcon" />
+            SketchUp
+            <span className="textSmall">3D설계도면</span>
+          </p>
+          <p className="skillContentWrap">ZBrush</p>
         </dd>
-        <dd className="contentText">ZBrush</dd>
       </dl>
     </div>
   );

@@ -14,7 +14,7 @@ function Category({ tab, setTab }) {
             setTab(0);
           }}
         >
-          Tech Stack,
+          Tech <span className="hide">Stack</span>,
         </li>
 
         <li
@@ -23,7 +23,7 @@ function Category({ tab, setTab }) {
             setTab(2);
           }}
         >
-          Design Skill,
+          Design<span className="hide">Skill</span> ,
         </li>
         <li
           className={`${tab === 1 ? "active" : ""}`}
@@ -31,7 +31,7 @@ function Category({ tab, setTab }) {
             setTab(1);
           }}
         >
-          Workexperience,
+          Work<span className="hide">experience</span>,
         </li>
         <li
           className={`${tab === 3 ? "active" : ""}`}
@@ -47,7 +47,7 @@ function Category({ tab, setTab }) {
             setTab(4);
           }}
         >
-          Toy Project,
+          Toy<span className="hide"> Project</span>,
         </li>
       </ul>
     </Title>
@@ -56,7 +56,7 @@ function Category({ tab, setTab }) {
 export default Category;
 
 const Title = styled.div`
-  @media screen and (min-width: 581px) {
+  @media screen and (min-width: 1330px) {
     width: 100%;
     ul {
       width: 90%;
@@ -67,7 +67,7 @@ const Title = styled.div`
         padding-right: 20px;
         text-decoration: none;
         list-style: none;
-        font-size: 2.8em;
+        font-size: 46px;
         height: 60px;
       }
       .active {
@@ -75,10 +75,10 @@ const Title = styled.div`
       }
     }
   }
-  @media screen and (max-width: 580px) and (min-width: 230px) {
+  @media screen and (max-width: 1329px) and (min-width: 1100px) {
     width: 100%;
     ul {
-      width: 100%;
+      width: 95%;
       display: flex;
       justify-content: flex-start;
       flex-wrap: wrap;
@@ -86,11 +86,117 @@ const Title = styled.div`
         padding-right: 20px;
         text-decoration: none;
         list-style: none;
-        font-size: 1.6em;
-        height: 36px;
+        font-size: 42px;
+        height: 60px;
       }
       .active {
-        border-bottom: 2px solid #000;
+        border-bottom: 3px solid #000;
+      }
+    }
+  }
+  @media screen and (max-width: 1099px) and (min-width: 980px) {
+    width: 100%;
+    margin: 0 auto;
+    ul {
+      width: 90%;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      li {
+        padding-right: 20px;
+        text-decoration: none;
+        list-style: none;
+        font-size: 38px;
+        height: 52px;
+      }
+      .active {
+        border-bottom: 3px solid #000;
+      }
+    }
+  }
+  @media screen and (max-width: 979px) and (min-width: 780px) {
+    width: 100%;
+    ul {
+      width: 90%;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      li {
+        padding-right: 20px;
+        text-decoration: none;
+        list-style: none;
+        font-size: 36px;
+        height: 48px;
+      }
+      .active {
+        border-bottom: 3px solid #000;
+      }
+    }
+  }
+  @media screen and (max-width: 779px) and (min-width: 580px) {
+    width: 100%;
+    ul {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      li {
+        padding-right: 20px;
+        text-decoration: none;
+        list-style: none;
+        font-size: 32px;
+        height: 42px;
+      }
+      .active {
+        border-bottom: 3px solid #000;
+      }
+    }
+  }
+  @media screen and (max-width: 579px) and (min-width: 230px) {
+    width: 100%;
+    ul {
+      width: 96%;
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      li {
+        padding-right: 20px;
+        text-decoration: none;
+        list-style: none;
+        font-size: 28px;
+        height: 38px;
+        .hide {
+          display: none;
+        }
+      }
+      .active {
+        border-bottom: 3px solid #000;
+      }
+    }
+  }
+  @media screen and (max-width: 379px) and (min-width: 230px) {
+    width: 100%;
+    ul {
+      width: 96%;
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      li {
+        text-decoration: none;
+        list-style: none;
+        font-size: 26px;
+        height: 34px;
+        .hide {
+          display: none;
+        }
+      }
+      .active {
+        border-bottom: 3px solid #000;
       }
     }
   }

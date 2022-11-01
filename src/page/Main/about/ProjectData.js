@@ -106,14 +106,13 @@ function ProjectData({ projectTab, setPrjModal, project }) {
 export default ProjectData;
 
 const ProjectDataWrap = styled.div`
+  width: 60%;
+  height: 60%;
   position: absolute;
   overflow: scroll;
-  top: 5%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  height: 90%;
-  margin: 0 auto;
+  transform: translate(-50%, -50%);
   background-color: #fff;
   border-radius: 20px;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
@@ -134,8 +133,9 @@ const ProjectDataWrap = styled.div`
 
 const ProjectListWrap = styled.div`
   /* position: relative; */
+  padding: 0 10% 0 10%;
   color: #333;
-  padding: 0 5% 0 5%;
+  text-align: start;
   h4 {
     font-size: 18px;
     color: #be0a26;

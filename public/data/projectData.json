@@ -145,13 +145,17 @@
         "id": 0,
         "title": "ALE6IX",
         "src": "https://velog.velcdn.com/images/ch00ng10000/post/3ff906f7-d6ea-43a6-92f1-fc37b06e3eae/image.png",
-        "url": "https://youtu.be/X2f3YSx6h0Q"
+        "url": "https://youtu.be/X2f3YSx6h0Q",
+        "readme": "https://github.com/miogy/1ST-PROJECT_ALE6IX",
+        "blog": "https://velog.io/@miogy/JUSTCODE-1st-Project-ALE6IX"
       },
       {
         "id": 1,
         "title": "STARBOX",
         "src": "https://user-images.githubusercontent.com/99234582/196137091-a6c63d61-c91f-4e6d-a4d9-ecd1097736e6.png",
-        "url": "https://www.youtube.com/watch?v=WFLoaP3cGkg"
+        "url": "https://www.youtube.com/watch?v=WFLoaP3cGkg",
+        "readme": "https://github.com/miogy/2ND-PROJECT_STARBOX/blob/main/README.md",
+        "blog": "https://velog.io/@miogy/JUSTCODE-2nd-Project-STARBOX"
       }
     ]
   }
