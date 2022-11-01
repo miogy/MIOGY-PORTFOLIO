@@ -98,7 +98,6 @@ const StyledSwiper = styled(Swiper)`
     .sliderImg {
       width: 100%;
     }
-    padding-top: 5%;
   }
   @media screen and (max-width: 579px) and (min-width: 230px) {
     width: 100%;

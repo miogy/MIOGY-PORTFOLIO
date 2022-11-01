@@ -5,7 +5,6 @@ import Info from "./page/Info";
 import styled from "styled-components";
 
 import { HashRouter, Route, Routes } from "react-router-dom";
-import ProjectPage from "./page/ProjectPage";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
         <Headers className="headerWrap" />
         <Routes className="componentWrap">
           <Route path="/" element={<Main />} />
-          <Route path="/project" element={<ProjectPage />} />
           <Route path="/info" element={<Info />} />
         </Routes>
         <Footer />

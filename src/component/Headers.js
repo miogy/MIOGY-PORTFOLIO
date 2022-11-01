@@ -52,7 +52,7 @@ const HeaderWrap = styled.div`
         text-decoration: none;
         list-style: none;
         color: #fff;
-        font-size: 36px;
+        font-size: 32px;
         letter-spacing: -0.16em;
       }
       h1 {
@@ -62,7 +62,7 @@ const HeaderWrap = styled.div`
       }
     }
   }
-  @media screen and (max-width: 579px) and (min-width: 300px) {
+  @media screen and (max-width: 579px) and (min-width: 380px) {
     position: fixed;
     top: 0;
     left: 0;
@@ -84,11 +84,43 @@ const HeaderWrap = styled.div`
         text-decoration: none;
         list-style: none;
         color: #fff;
-        font-size: 28px;
+        font-size: 26px;
         letter-spacing: -0.16em;
       }
       h1 {
-        font: 38px "Joan", serif;
+        font: 36px "Joan", serif;
+        color: #fff;
+        letter-spacing: -0.16em;
+      }
+    }
+  }
+  @media screen and (max-width: 379px) and (min-width: 230px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 9999;
+    div {
+      width: 80%;
+      padding: 0 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .headerLink {
+        text-decoration: none;
+        list-style: none;
+        color: #fff;
+        font-size: 22px;
+        letter-spacing: -0.16em;
+      }
+      h1 {
+        font: 34px "Joan", serif;
         color: #fff;
         letter-spacing: -0.16em;
       }

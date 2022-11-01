@@ -95,7 +95,7 @@ const Title = styled.div`
     }
   }
   @media screen and (max-width: 1099px) and (min-width: 980px) {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     ul {
       width: 90%;
@@ -153,7 +153,7 @@ const Title = styled.div`
       }
     }
   }
-  @media screen and (max-width: 579px) and (min-width: 230px) {
+  @media screen and (max-width: 579px) and (min-width: 380px) {
     width: 100%;
     ul {
       width: 96%;
@@ -163,7 +163,7 @@ const Title = styled.div`
       justify-content: flex-start;
       flex-wrap: wrap;
       li {
-        padding-right: 20px;
+        padding-right: 8px;
         text-decoration: none;
         list-style: none;
         font-size: 28px;
@@ -187,6 +187,7 @@ const Title = styled.div`
       justify-content: flex-start;
       flex-wrap: wrap;
       li {
+        padding-right: 6px;
         text-decoration: none;
         list-style: none;
         font-size: 26px;

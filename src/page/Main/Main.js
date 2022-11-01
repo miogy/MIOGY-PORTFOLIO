@@ -27,6 +27,7 @@ const StyledMain = styled.div`
       position: relative;
       .sliderComponentWrap {
         width: 100%;
+        padding-top: 3%;
       }
       .aboutComponentWrap {
         width: 1100px;
@@ -38,8 +39,10 @@ const StyledMain = styled.div`
     width: 100%;
     .mainContentWrap {
       width: 100%;
+      margin: 0 auto;
       .sliderComponentWrap {
         width: 100%;
+        padding-top: 4%;
       }
       .aboutComponentWrap {
         width: 980px;
@@ -53,6 +56,7 @@ const StyledMain = styled.div`
       width: 100%;
       .sliderComponentWrap {
         width: 100%;
+        padding-top: 5%;
       }
       .aboutComponentWrap {
         width: 90%;
@@ -67,6 +71,7 @@ const StyledMain = styled.div`
 
       .sliderComponentWrap {
         width: 100%;
+        padding-top: 5%;
       }
       .aboutComponentWrap {
         width: 90%;
