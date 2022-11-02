@@ -159,6 +159,7 @@ export default ProjectCard;
 const StyledProject = styled.div`
   @media screen and (min-width: 1330px) {
     width: 100%;
+    padding-top: 60px;
     display: flex;
     justify-content: flex-start;
     overflow: scroll;
@@ -221,6 +222,7 @@ const StyledProject = styled.div`
               border-radius: 5px;
               background-color: #fff;
               margin: 3px;
+              color: #333;
               cursor: pointer;
               &:hover {
                 font-weight: 600;
@@ -244,6 +246,7 @@ const StyledProject = styled.div`
   }
   @media screen and (max-width: 1329px) and (min-width: 980px) {
     width: 100%;
+    padding-top: 50px;
     display: flex;
     justify-content: flex-start;
     overflow: scroll;
@@ -306,6 +309,7 @@ const StyledProject = styled.div`
               border-radius: 5px;
               background-color: #fff;
               margin: 3px;
+              color: #333;
               cursor: pointer;
               &:hover {
                 font-weight: 600;
@@ -329,6 +333,7 @@ const StyledProject = styled.div`
   }
   @media screen and (max-width: 979px) and (min-width: 580px) {
     width: 100%;
+    padding-top: 40px;
     display: flex;
     justify-content: flex-start;
     overflow: scroll;
@@ -392,6 +397,7 @@ const StyledProject = styled.div`
               border-radius: 5px;
               background-color: #fff;
               margin: 3px;
+              color: #333;
               cursor: pointer;
               &:hover {
                 font-weight: 600;
@@ -415,6 +421,7 @@ const StyledProject = styled.div`
   }
   @media screen and (max-width: 579px) and (min-width: 230px) {
     width: 100%;
+    padding-top: 30px;
     display: flex;
     justify-content: flex-start;
     overflow: scroll;
@@ -437,8 +444,8 @@ const StyledProject = styled.div`
           .projectImg {
             position: relative;
             .imgContent {
-              width: 440px;
-              height: 240px;
+              width: 300px;
+              height: 180px;
             }
             .projectPage {
               width: 160px;
@@ -461,24 +468,31 @@ const StyledProject = styled.div`
             }
           }
           .cardcontainer {
+            margin: 0 auto;
             display: flex;
             justify-content: center;
             align-items: center;
             .cardTitle {
-              font-size: 18px;
+              font-size: 14px;
               font-weight: 600;
+              margin: 0;
             }
             .projectLink {
+              font-size: 12px;
               cursor: pointer;
+              margin: 0;
             }
             .cardBtn {
-              width: 64px;
-              height: 28px;
+              width: 54px;
+              height: 24px;
               border: 1px solid lightgray;
-              border-radius: 5px;
               background-color: #fff;
-              margin: 3px;
+              font-size: 11px;
+              color: #333;
               cursor: pointer;
+              &:nth-child(1) {
+                border-right: 0;
+              }
               &:hover {
                 font-weight: 600;
               }

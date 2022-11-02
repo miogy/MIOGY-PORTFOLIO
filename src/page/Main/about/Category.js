@@ -167,7 +167,7 @@ const Title = styled.div`
         text-decoration: none;
         list-style: none;
         font-size: 28px;
-        height: 38px;
+        height: 36px;
         .hide {
           display: none;
         }

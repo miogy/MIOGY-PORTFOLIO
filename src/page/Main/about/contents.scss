@@ -1,6 +1,5 @@
 @media screen and (min-width: 1100px) {
   .contentWrap {
-    //content box
     width: 80%;
     margin: 0 auto;
     padding-top: 5%;
@@ -45,6 +44,19 @@
           .contentBlock {
             display: inline-block;
           }
+        }
+        .textSmall {
+          height: 20px;
+          font-size: 14px;
+          margin-left: 6px;
+          padding-right: 8px;
+          padding-left: 3px;
+          color: #888;
+          border: 1px solid rgba($color: #999, $alpha: 0.6);
+          line-height: 20px;
+        }
+        .contentBlock {
+          display: inline-block;
         }
       }
     }
@@ -100,6 +112,19 @@
             display: inline-block;
           }
         }
+        .textSmall {
+          height: 20px;
+          font-size: 14px;
+          margin-left: 6px;
+          padding-right: 8px;
+          padding-left: 3px;
+          color: #888;
+          border: 1px solid rgba($color: #999, $alpha: 0.6);
+          line-height: 20px;
+        }
+        .contentBlock {
+          display: inline-block;
+        }
       }
     }
   }
@@ -143,7 +168,7 @@
             margin-right: 6px;
           }
           .textSmall {
-            font-size: 14px;
+            font-size: 12px;
             margin-left: 6px;
             padding-right: 8px;
             padding-left: 3px;
@@ -154,6 +179,20 @@
           .contentBlock {
             display: inline-block;
           }
+        }
+        .textSmall {
+          height: 20px;
+          font-size: 12px;
+          margin-left: 6px;
+          padding-right: 8px;
+          padding-left: 3px;
+          display: flex;
+          align-items: center;
+          color: #888;
+          border: 1px solid rgba($color: #999, $alpha: 0.6);
+        }
+        .contentBlock {
+          display: inline-block;
         }
       }
     }
@@ -195,7 +234,7 @@
             margin-right: 6px;
           }
           .textSmall {
-            font-size: 14px;
+            font-size: 12px;
             margin-left: 6px;
             padding-right: 8px;
             padding-left: 3px;
@@ -206,6 +245,19 @@
           .contentBlock {
             display: inline-block;
           }
+        }
+        .textSmall {
+          height: 18px;
+          font-size: 12px;
+          margin-left: 6px;
+          padding-right: 8px;
+          padding-left: 3px;
+          color: #888;
+          border: 1px solid rgba($color: #999, $alpha: 0.6);
+          line-height: 20px;
+        }
+        .contentBlock {
+          display: inline-block;
         }
       }
     }
@@ -213,13 +265,13 @@
 }
 @media screen and (max-width: 679px) and (min-width: 580px) {
   .contentWrap {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 3%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     .contentsContainer {
       width: 50%;
+      margin: 0 0 20px 0;
       .contentTitle {
         width: 100%;
         margin: 0 auto;
@@ -227,7 +279,7 @@
         justify-content: flex-start;
         text-align: start;
         font-size: 22px;
-        margin-bottom: 6px;
+        margin-bottom: 5px;
         .titleIcon {
           padding-right: 6px;
         }
@@ -243,6 +295,7 @@
         flex-wrap: wrap;
         .skillContentWrap {
           white-space: nowrap;
+          margin: 0 0 10px 0;
           margin-right: 10px;
           .titleIcon {
             margin-right: 6px;
@@ -259,6 +312,21 @@
           .contentBlock {
             display: inline-block;
           }
+        }
+        .textSmall {
+          height: 16px;
+          font-size: 11px;
+          margin-left: 6px;
+          padding-right: 8px;
+          padding-left: 3px;
+          display: flex;
+          align-items: center;
+          color: #888;
+          border: 1px solid rgba($color: #999, $alpha: 0.6);
+          line-height: 20px;
+        }
+        .contentBlock {
+          display: inline-block;
         }
       }
     }
@@ -266,25 +334,27 @@
 }
 @media screen and (max-width: 579px) and (min-width: 380px) {
   .contentWrap {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 6%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     .contentsContainer {
+      width: 50%;
+      margin: 0 0 20px 0;
       .contentTitle {
         width: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: flex-start;
         text-align: start;
-        font-size: 20px;
-        margin-bottom: 6px;
+        font-size: 22px;
+        margin-bottom: 5px;
         .titleIcon {
           padding-right: 6px;
         }
       }
       .contentText {
-        padding-left: 100px;
+        padding-left: 30px;
         text-align: start;
         margin: 0;
         line-height: 30px;
@@ -294,6 +364,7 @@
         flex-wrap: wrap;
         .skillContentWrap {
           white-space: nowrap;
+          margin: 0 0 10px 0;
           margin-right: 10px;
           .titleIcon {
             margin-right: 6px;
@@ -310,6 +381,21 @@
           .contentBlock {
             display: inline-block;
           }
+        }
+        .textSmall {
+          height: 16px;
+          font-size: 11px;
+          margin-left: 6px;
+          padding-right: 8px;
+          padding-left: 3px;
+          display: flex;
+          align-items: center;
+          color: #888;
+          border: 1px solid rgba($color: #999, $alpha: 0.6);
+          line-height: 20px;
+        }
+        .contentBlock {
+          display: inline-block;
         }
       }
     }
@@ -317,11 +403,11 @@
 }
 @media screen and (max-width: 379px) and (min-width: 230px) {
   .contentWrap {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
-    padding-top: 5%;
     padding-bottom: 5%;
     .contentsContainer {
+      width: 100%;
       .contentTitle {
         width: 100%;
         margin: 0 auto;
@@ -335,32 +421,49 @@
         }
       }
       .contentText {
-        padding-left: 50px;
+        padding-left: 5%;
         text-align: start;
         margin: 0;
-        line-height: 30px;
+        line-height: 22px;
         font-size: 14px;
         color: #444;
         display: flex;
+        justify-content: flex-start;
         flex-wrap: wrap;
         .skillContentWrap {
-          white-space: nowrap;
-          margin-right: 10px;
+          display: flex;
+          justify-content: flex-start;
           .titleIcon {
             margin-right: 6px;
           }
           .textSmall {
+            height: 18px;
             font-size: 11px;
             margin-left: 6px;
             padding-right: 8px;
             padding-left: 3px;
+            display: flex;
+            align-items: center;
             color: #888;
-            border: 1px solid #999;
-            line-height: 20px;
+            border: 1px solid rgba($color: #999, $alpha: 0.4);
           }
           .contentBlock {
             display: inline-block;
           }
+        }
+        .textSmall {
+          height: 18px;
+          font-size: 11px;
+          margin-left: 6px;
+          padding-right: 8px;
+          padding-left: 3px;
+          display: flex;
+          align-items: center;
+          color: #888;
+          border: 1px solid rgba($color: #999, $alpha: 0.4);
+        }
+        .contentBlock {
+          display: inline-block;
         }
       }
     }

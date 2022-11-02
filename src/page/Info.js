@@ -19,10 +19,6 @@ function Info() {
 
   return (
     <StyledInfo style={{ padding: "5% 0" }}>
-      {/* <span
-        className="next button"
-        onClick={() => book.current.pageFlip().flipNext()}
-      ></span> */}
       <div
         className="pdfLink"
         onClick={() => {
@@ -37,7 +33,7 @@ function Info() {
         showCover={false}
         onFlip={updatePage}
         width={600}
-        height={700}
+        height={800}
         ref={book}
         useMouseEvents={true}
         flippingTime={500}
@@ -51,10 +47,6 @@ function Info() {
           );
         })}
       </HTMLFlipBook>
-      {/* <span
-        onClick={() => book.current.pageFlip().flipPrev()}
-        className="previous button"
-      ></span> */}
 
       <span className="info-page">
         {page} - {total}
@@ -151,6 +143,7 @@ const StyledInfo = styled.div`
   .page {
     max-width: 100%;
     max-height: 100%;
+    overflow: scroll;
     margin: 0 auto;
     background-color: white;
     border: 1px solid lightgray;
@@ -165,5 +158,58 @@ const StyledInfo = styled.div`
     width: 100%;
     position: absolute;
     bottom: 10px;
+  }
+  @media screen and (max-width: 680px) and (min-width: 480px) {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: center;
+    .pdfLink {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      padding: 8px;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      color: lightgray;
+      font-size: 14px;
+      background-color: #fff;
+      z-index: 1000;
+      &:hover {
+        color: #ec1c24;
+        strong {
+          color: #333;
+          padding-left: 5px;
+        }
+      }
+      strong {
+        padding-left: 5px;
+      }
+    }
+
+    .page {
+      max-width: 100%;
+      max-height: 100%;
+      padding-left: 10%;
+      margin: 0 auto;
+      background-color: white;
+      border: 1px solid lightgray;
+      box-shadow: 10px 5px 5px lightgray;
+      img {
+        width: 80%;
+        padding-top: 10%;
+        margin: 0 auto;
+      }
+    }
+    .info-page {
+      width: 100%;
+      position: absolute;
+      bottom: 10px;
+    }
   }
 `;

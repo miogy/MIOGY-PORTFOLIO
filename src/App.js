@@ -3,7 +3,7 @@ import Headers from "./component/Headers";
 import Footer from "./component/Footer";
 import Info from "./page/Info";
 import styled from "styled-components";
-
+import Mypage from "./page/Mypage";
 import { HashRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
         <Routes className="componentWrap">
           <Route path="/" element={<Main />} />
           <Route path="/info" element={<Info />} />
+          <Route path="/page" element={<Mypage />} />
         </Routes>
         <Footer />
       </HashRouter>

@@ -3,14 +3,12 @@ import Workexperience from "./about/Workexperience";
 import TechStack from "./about/TechStack";
 import ProjectCard from "./about/ProjectCard";
 import ToyProjectCard from "./about/ToyProjectCard";
-// import "./about/contents.scss";
-import styled from "styled-components";
 
 function Project() {
   return (
-    <StyledProject>
+    <>
       <ProjectCard />
-    </StyledProject>
+    </>
   );
 }
 
@@ -30,8 +28,3 @@ const stackContent = {
   4: <ToyProject />,
 };
 export default stackContent;
-
-const StyledProject = styled.div`
-  width: 100%;
-  padding-top: 8%;
-`;

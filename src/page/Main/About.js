@@ -116,7 +116,7 @@ const AboutWrap = styled.div`
       width: 100%;
       margin: 0 auto;
       h3 {
-        padding-left: 10px;
+        margin: 3%;
         float: left;
         font-size: 26px;
         font-weight: 300;
@@ -137,7 +137,7 @@ const AboutWrap = styled.div`
       width: 100%;
       margin: 0 auto;
       h3 {
-        padding-left: 10px;
+        margin: 3%;
         float: left;
         font-size: 24px;
         font-weight: 300;

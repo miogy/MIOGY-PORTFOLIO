@@ -27,27 +27,6 @@ function Footer() {
         </dd>
       </dl>
       <dl className="footerContainer">
-        <dt>SNS</dt>
-        <dd>
-          <span
-            className="styleNone"
-            onClick={() => {
-              window.location.href = "https://www.instagram.com/mi_ogy/";
-            }}
-          >
-            Instagram
-          </span>
-          <span
-            className="styleNone"
-            onClick={() => {
-              window.location.href = "https://blog.naver.com/jjangrl87";
-            }}
-          >
-            Blog
-          </span>
-        </dd>
-      </dl>
-      <dl className="footerContainer">
         <dt></dt>
         <dd
           onClick={() => {
@@ -55,7 +34,7 @@ function Footer() {
           }}
         >
           <Link to="/info" className="styleNone">
-            이력서
+            이력서 <span className="hide">한눈에 보기</span>
           </Link>
         </dd>
       </dl>
@@ -99,6 +78,11 @@ const FooterWrap = styled.div`
     height: 50px;
     dt {
       display: none;
+    }
+    dd {
+      .hide {
+        display: none;
+      }
     }
   }
 `;
