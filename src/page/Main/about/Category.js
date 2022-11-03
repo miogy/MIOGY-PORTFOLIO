@@ -18,17 +18,17 @@ function Category({ tab, setTab }) {
         </li>
 
         <li
-          className={`${tab === 2 ? "active" : ""}`}
+          className={`${tab === 1 ? "active" : ""}`}
           onClick={() => {
-            setTab(2);
+            setTab(1);
           }}
         >
           Design<span className="hide">Skill</span> ,
         </li>
         <li
-          className={`${tab === 1 ? "active" : ""}`}
+          className={`${tab === 2 ? "active" : ""}`}
           onClick={() => {
-            setTab(1);
+            setTab(2);
           }}
         >
           Work<span className="hide">experience</span>,

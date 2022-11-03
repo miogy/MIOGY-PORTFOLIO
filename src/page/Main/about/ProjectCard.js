@@ -55,29 +55,6 @@ function ProjectCard() {
 
   const delay = 100;
   const onThrottleDragMove = throttle(onDragMove, delay);
-  const ProjectCardTab = {
-    0: (
-      <ProjectData
-        projectTab={projectTab}
-        setPrjModal={setPrjModal}
-        project={project.content}
-      />
-    ),
-    1: (
-      <ProjectData
-        projectTab={projectTab}
-        setPrjModal={setPrjModal}
-        project={project.content}
-      />
-    ),
-    2: (
-      <ProjectData
-        projectTab={projectTab}
-        setPrjModal={setPrjModal}
-        project={project.content}
-      />
-    ),
-  };
 
   useEffect(() => {
     fetch("/data/projectData.json")
@@ -95,11 +72,9 @@ function ProjectCard() {
       onMouseLeave={onDragEnd}
       ref={scrollRef}
     >
-      {/* {console.log(project)} */}
       {project.project?.projectMain?.map((projectData) => {
         return (
           <div className="projectWrap" key={projectData.id}>
-            {/* {console.log(projectData)} */}
             <div className="cardWrap">
               <dl className="cardContainer">
                 <dt className="projectImg">
@@ -156,7 +131,13 @@ function ProjectCard() {
       })}
 
       {prjModal === true ? (
-        <div className="projectCardModal">{ProjectCardTab[projectTab]}</div>
+        <div className="projectCardModal">
+          <ProjectData
+            projectTab={projectTab}
+            setPrjModal={setPrjModal}
+            project={project.content}
+          />
+        </div>
       ) : null}
     </StyledProject>
   );

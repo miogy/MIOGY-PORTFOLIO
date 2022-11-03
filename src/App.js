@@ -5,6 +5,7 @@ import Info from "./page/Info";
 import styled from "styled-components";
 import Mypage from "./page/Mypage";
 import { HashRouter, Route, Routes } from "react-router-dom";
+import ProjectPage from "./page/Main/ProjectPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/info" element={<Info />} />
           <Route path="/page" element={<Mypage />} />
+          <Route path="/project" element={<ProjectPage />} />
         </Routes>
         <Footer />
       </HashRouter>

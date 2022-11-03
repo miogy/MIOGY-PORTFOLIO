@@ -1,17 +1,30 @@
 import styled from "styled-components";
 import Category from "./about/Category";
-import ContentData from "./ContentData";
+import DesignSkill from "./about/DesignSkill";
+import Workexperience from "./about/Workexperience";
+import TechStack from "./about/TechStack";
+import ProjectCard from "./about/ProjectCard";
+import ToyProjectCard from "./about/ToyProjectCard";
+
 import { useState } from "react";
 
 function About() {
   const [tab, setTab] = useState(0);
+
+  const stackContent = {
+    0: <TechStack />,
+    1: <Workexperience />,
+    2: <DesignSkill />,
+    3: <ProjectCard />,
+    4: <ToyProjectCard />,
+  };
 
   return (
     <AboutWrap>
       <div className="aboutContainer">
         <h3>About</h3>
         <Category tab={tab} setTab={setTab} />
-        <div className="contentContainer">{ContentData[tab]}</div>
+        <div className="contentContainer">{stackContent[tab]}</div>
       </div>
     </AboutWrap>
   );
