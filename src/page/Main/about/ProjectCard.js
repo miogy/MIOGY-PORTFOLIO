@@ -70,6 +70,13 @@ function ProjectCard() {
         project={project.content}
       />
     ),
+    2: (
+      <ProjectData
+        projectTab={projectTab}
+        setPrjModal={setPrjModal}
+        project={project.content}
+      />
+    ),
   };
 
   useEffect(() => {

@@ -27,15 +27,24 @@ function Footer() {
         </dd>
       </dl>
       <dl className="footerContainer">
-        <dt></dt>
+        <dt>이력서</dt>
         <dd
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <Link to="/info" className="styleNone">
-            이력서 <span className="hide">한눈에 보기</span>
+          <Link to="/info" className="styleNone flipbook">
+            E-Book
           </Link>
+          <span
+            className="pdfLink styleNone"
+            onClick={() => {
+              window.location.href =
+                "https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:adffedc3-1ec3-331e-82f9-018fe1ae2a7e";
+            }}
+          >
+            PDF
+          </span>
         </dd>
       </dl>
     </FooterWrap>
@@ -73,7 +82,7 @@ const FooterWrap = styled.div`
       }
     }
   }
-  @media screen and (max-width: 580px) and (min-width: 230px) {
+  @media screen and (max-width: 680px) and (min-width: 230px) {
     width: 100%;
     height: 50px;
     dt {
@@ -82,6 +91,12 @@ const FooterWrap = styled.div`
     dd {
       .hide {
         display: none;
+      }
+      .flipbook {
+        display: none;
+      }
+      .pdfLink {
+        color: #666;
       }
     }
   }
