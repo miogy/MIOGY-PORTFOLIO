@@ -68,7 +68,6 @@ const FooterWrap = styled.div`
   align-items: center;
   text-align: center;
   z-index: 9999;
-  border: 1px solid red;
   .footerContainer {
     padding: 0;
     .list {
@@ -118,7 +117,6 @@ const FooterWrap = styled.div`
     align-items: center;
     text-align: center;
     z-index: 9999;
-    border: 1px solid red;
     .footerContainer {
       .list {
         font-size: 0.8em;
