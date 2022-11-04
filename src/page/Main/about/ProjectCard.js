@@ -225,7 +225,7 @@ const StyledProject = styled.div`
       top: 0;
       left: 0;
       width: 100%;
-      height: 90%;
+      height: 100%;
       padding: 0;
       background-color: #fff;
       z-index: 100;
@@ -312,7 +312,7 @@ const StyledProject = styled.div`
       top: 0;
       left: 0;
       width: 100%;
-      height: 90%;
+      height: 100%;
       padding: 0;
       background-color: #fff;
       z-index: 100;
@@ -400,7 +400,7 @@ const StyledProject = styled.div`
       top: 0;
       left: 0;
       width: 100%;
-      height: 85%;
+      height: 100%;
       padding: 0;
       background-color: #fff;
       z-index: 100;
@@ -494,7 +494,7 @@ const StyledProject = styled.div`
       top: 0;
       left: 0;
       width: 100%;
-      height: 85%;
+      height: 100%;
       padding: 0;
       background-color: #fff;
       z-index: 100;
