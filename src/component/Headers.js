@@ -55,6 +55,7 @@ const HeaderWrap = styled.div`
         font-size: 32px;
         letter-spacing: -0.16em;
         h1 {
+          margin: 0;
           font: 3rem/60px "Joan", serif;
           color: #fff;
           letter-spacing: -0.16em;
