@@ -113,6 +113,6 @@ const StyledSwiper = styled(Swiper)`
     .sliderImg {
       width: 100%;
     }
-    padding-top: 5%;
+    padding-top: 20px;
   }
 `;

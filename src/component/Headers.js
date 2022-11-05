@@ -79,12 +79,12 @@ const HeaderWrap = styled.div`
       }
     }
   }
-  @media screen and (max-width: 579px) and (min-width: 380px) {
+  @media screen and (max-width: 579px) and (min-width: 230px) {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 46px;
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     display: flex;
@@ -101,53 +101,10 @@ const HeaderWrap = styled.div`
         text-decoration: none;
         list-style: none;
         color: #fff;
-        font-size: 26px;
+        font-size: 20px;
         letter-spacing: -0.16em;
         h1 {
-          font: 40px/60px "Joan", serif;
-          color: #fff;
-          letter-spacing: -0.16em;
-        }
-      }
-
-      /* .pdfLink {
-        width: 10%;
-        font-size: 26px;
-        font-weight: 600;
-        height: 50px;
-        color: #fff;
-        &:hover {
-          color: #333;
-        }
-      } */
-    }
-  }
-  @media screen and (max-width: 379px) and (min-width: 230px) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 9999;
-    .headerContainer {
-      width: 80%;
-      padding: 0 5%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .headerLink {
-        text-decoration: none;
-        list-style: none;
-        color: #fff;
-        font-size: 22px;
-        letter-spacing: -0.16em;
-        h1 {
-          font: 38px/60px "Joan", serif;
+          font: 32px "Joan", serif;
           color: #fff;
           letter-spacing: -0.16em;
         }

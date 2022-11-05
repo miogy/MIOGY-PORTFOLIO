@@ -1,31 +1,31 @@
 const ImgSliderData = [
   {
     id: 0,
-    url: "/detaile",
-    src: "https://velog.velcdn.com/images/miogy/post/e14a60b4-9e27-4f83-b37a-098440a853ff/image.jpeg",
+    url: "/1stproject",
+    src: "https://velog.velcdn.com/images/miogy/post/3ec684fa-48c0-4145-bee2-785bcc64a55b/image.png",
     title: "W e l c o m e",
     text: "",
   },
   {
     id: 1,
-    url: "/detaile",
-    src: "https://velog.velcdn.com/images/miogy/post/ac370442-02b9-4b9d-b981-b4eb309203fb/image.jpeg",
+    url: "/2ndproject",
+    src: "https://velog.velcdn.com/images/miogy/post/9ba60074-104e-4374-8f88-749ab5229cc5/image.png",
     title: "Fashion",
     text: "",
   },
 
   {
-    id: 3,
-    url: "/detaile",
-    src: "https://velog.velcdn.com/images/miogy/post/ac370442-02b9-4b9d-b981-b4eb309203fb/image.jpeg",
+    id: 2,
+    url: "/lululab",
+    src: "https://velog.velcdn.com/images/miogy/post/06783705-89b1-4995-a3e9-bf90f248078a/image.png",
     title: "",
     text: "",
   },
 
   {
-    id: 5,
-    url: "/detaile",
-    src: "https://velog.velcdn.com/images/miogy/post/ac370442-02b9-4b9d-b981-b4eb309203fb/image.jpeg",
+    id: 3,
+    url: "/refactoring",
+    src: "https://velog.velcdn.com/images/miogy/post/7300e7bc-6de2-4c38-9800-ec9cf2f8ac51/image.png",
     title: "",
     text: "",
   },
