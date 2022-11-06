@@ -13,6 +13,7 @@ import { NavLink } from "react-router-dom";
 function Slider() {
   return (
     <StyledSwiper
+      spaceBetween={10}
       autoplay={{
         delay: 2500,
         disableOnInteraction: false, //스와이프 후 자동재생
@@ -24,12 +25,10 @@ function Slider() {
       modules={[Autoplay, Pagination, Navigation]} //modules에 기능 넣기
     >
       {ImgSliderData?.map((slideData) => {
-        // console.log(slideData);
         return (
           <SwiperSlide key={slideData.id}>
-            <NavLink to={slideData.url}>
-              <img src={slideData.src} alt="pic" className="sliderImg" />
-            </NavLink>
+            <NavLink to={slideData.url}>{/* <button>CLICK</button> */}</NavLink>
+            <img src={slideData.src} alt="pic" className="sliderImg" />
           </SwiperSlide>
         );
       })}
@@ -44,14 +43,25 @@ const StyledSwiper = styled(Swiper)`
     margin: 0 auto;
     .swiper-button-prev {
       font-weight: bold;
-      color: #333;
+      color: #fff;
     }
     .swiper-button-next {
       font-weight: bold;
-      color: #333;
+      color: #fff;
     }
     .sliderImg {
       width: 100%;
+    }
+    button {
+      position: absolute;
+      bottom: 5%;
+      right: 20%;
+      padding: 5px 10px;
+      font-size: 28px;
+      color: #333;
+      background-color: rgba(255, 255, 255, 0.3);
+      border: 1px solid #fff;
+      z-index: 100;
     }
   }
   @media screen and (max-width: 1329px) and (min-width: 1100px) {

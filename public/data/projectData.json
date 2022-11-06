@@ -2,6 +2,82 @@
   "content": [
     {
       "id": 0,
+      "contentTitle": "STARBOX",
+      "data": [
+        {
+          "contentId": 1,
+          "firstTitle": "팀 프로젝트 소개",
+          "firstAbout": "이전 프로젝트였던 E-commerce에서 좀더 다양한 기능을 접할수 있는 사이트를 고려하던 중 기본 CRUD는 물론 새로운 기능과 UI를 접할 수 있는 MEGABOX를 선정하게 되었습니다. fetch함수를 이용하여 api로 연결하여 데이터를 받아오고 UI부분도 스스로 sass를 이용하여 구현하였습니다.",
+          "team": "개발 인원 및 기간",
+          "date": "2022/09/19~2022/09/30",
+          "member": "FE 4명, BE 2명",
+
+          "skill": "적용기술",
+          "library": "React js, sass, styled-component",
+          "CommunityTools": "Trello, Notion, Zep, Zoom, Slack",
+          "VersionControlTool": "Git",
+          "thirdTitle": "프로젝트 구현기능",
+          "thirdAbout": {
+            "all": "메인페이지, 영화페이지, 예약페이지, 로그인, 회원가입, 아이디/비밀번호 찾기, 상세페이지",
+            "team": "Main-page 섹션별 컴포넌트화 작업",
+            "roleContent": [
+              {
+                "id": 0,
+                "role": "UI ",
+                "work": "Header별 UI 및 기능: ",
+                "url": "https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4",
+                "text": "Nav Link를 이용한 페이지별 링크 연결, user의 location정보 UI구현 및 링크 연결, Subnav bar Tab구현 (클릭시 Drop-down메뉴 리스트 구현 close버튼으로 닫기) , 카테고리별 링크 연결, 로그인 pop-up 모달 구현, 회원가입 컴포넌트 별 아이디/비밀번호 찾기 레이아웃 및 스타일 구현"
+              },
+              {
+                "id": 1,
+                "role": "Login",
+                "work": "로그인/로그아웃 : ",
+                "url": "https://user-images.githubusercontent.com/99234582/199281315-56606e3c-ccbd-46be-948a-030aa6a4201a.mp4",
+                "text": "fetch를 이용하여 post로 user정보 보내기, DB의 user 정보 데이터를 비교 후 token받아서 localstorage에 담기, 로그아웃을 클릭하면 이벤트핸들러를 이용하여 localstorage에 token을 지우기"
+              },
+              {
+                "id": 2,
+                "role": "Signup",
+                "work": "step.01 휴대폰 인증 : ",
+                "url": "https://user-images.githubusercontent.com/99234582/196132040-c2019575-20fd-40c3-a423-99737cb4cb95.mp4",
+                "text": "fetch함수를 이용하여 api를 호출하고 POST로 user의 정보를 보낸다. 번호를 보내면 인증번호를 입력하여 DB로 다시 보낼 toggle을 생성한다. 문자로 받은 인증번호를 담아놓은 user의 휴대폰 번호와 같이 보내준다."
+              },
+              {
+                "id": 3,
+                "role": "Signup",
+                "work": "step.02 약관 동의",
+                "url": "https://user-images.githubusercontent.com/99234582/196134181-fc848814-cc87-4dfb-8c40-c3bab8f11fad.mp4",
+                "text": "체크박스를 이용하여 필수체크선택시 다음 step으로 넘어간다. 전체 선택시 체크박스 전체 선택 또는 하나 해제시 전체 선택 해제"
+              },
+              {
+                "id": 4,
+                "role": "Signup",
+                "work": "step.03 정보 입력후 가입완료",
+
+                "url": "https://user-images.githubusercontent.com/99234582/196135319-8d243855-88f8-4304-98de-a4ff29592f6b.mp4",
+                "content": "window.localstorage를 이용하여 step01에서 기재한 user의 정보를 해당 입력칸에 담는다. 아이디를 DB에 보내어 user데이터에서 확인후 중복체크를 해준다. 비밀번호와 이메일을 입력시 유효성 검사를 하고 문제가 없을 시 아래 체크박스중 하나를 선택해야 가입이 완료된다. 가입완료 버튼을 클릭하면 메인페이지로 이동한다."
+              },
+              {
+                "id": 5,
+                "role": "User find & Password find",
+                "work": "아이디 찾기 및 임시비밀번호 받기",
+                "url": "https://user-images.githubusercontent.com/99234582/196136005-61c8834b-b045-4915-8bad-77875ba85255.mp4",
+                "text": "fetch함수를 이용하여 POST메서드로 user정보를 보낸후 DB에서 비교하여 아이디 또는 임시 비밀번호를 받는다."
+              },
+              {
+                "id": 6,
+                "role": "코드 및 에러",
+                "work": "Blog로 가시면 더 볼수 있습니다.",
+                "url": "https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4",
+                "text": "프로젝트 타이틀 옆 Project Blog버튼으로 해당 블로그를 방문하시면 프로젝트시 코드나 에러관련 리뷰를 더 자세히 볼 수 있습니다."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 1,
       "contentTitle": "ALE6IX",
       "readme": "https://github.com/miogy/1ST-PROJECT_ALE6IX",
       "blog": "https://velog.io/@miogy/JUSTCODE-1st-Project-ALE6IX",
@@ -63,187 +139,25 @@
           }
         }
       ]
-    },
-    {
-      "id": 1,
-      "contentTitle": "STARBOX",
-      "data": [
-        {
-          "contentId": 1,
-          "firstTitle": "팀 프로젝트 소개",
-          "firstAbout": "이전 프로젝트였던 E-commerce에서 좀더 다양한 기능을 접할수 있는 사이트를 고려하던 중 기본 CRUD는 물론 새로운 기능과 UI를 접할 수 있는 MEGABOX를 선정하게 되었습니다. fetch함수를 이용하여 api로 연결하여 데이터를 받아오고 UI부분도 스스로 sass를 이용하여 구현하였습니다.",
-          "team": "개발 인원 및 기간",
-          "date": "2022/09/19~2022/09/30",
-          "member": "FE 4명, BE 2명",
-
-          "skill": "적용기술",
-          "lang": "React.js, Javascript",
-          "library": "React js, sass, styled-component",
-          "CommunityTools": "Trello, Notion, Zep, Zoom, Slack",
-          "VersionControlTool": "Git",
-          "thirdTitle": "프로젝트 구현기능",
-          "thirdAbout": {
-            "all": "메인페이지, 영화페이지, 예약페이지, 로그인, 회원가입, 아이디/비밀번호 찾기, 상세페이지",
-            "team": "Main-page 섹션별 컴포넌트화 작업",
-            "roleContent": [
-              {
-                "id": 0,
-                "role": "UI ",
-                "work": "Header별 UI 및 기능: ",
-                "url": "https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4",
-                "text": "Nav Link를 이용한 페이지별 링크 연결, user의 location정보 UI구현 및 링크 연결, Subnav bar Tab구현 (클릭시 Drop-down메뉴 리스트 구현 close버튼으로 닫기) , 카테고리별 링크 연결, 로그인 pop-up 모달 구현, 회원가입 컴포넌트 별 아이디/비밀번호 찾기 레이아웃 및 스타일 구현"
-              },
-              {
-                "id": 1,
-                "role": "Login",
-                "work": "로그인/로그아웃 : ",
-                "url": "https://user-images.githubusercontent.com/99234582/199281315-56606e3c-ccbd-46be-948a-030aa6a4201a.mp4",
-                "text": "fetch를 이용하여 post로 user정보 보내기, DB의 user 정보 데이터를 비교 후 token받아서 localstorage에 담기, 로그아웃을 클릭하면 이벤트핸들러를 이용하여 localstorage에 token을 지우기"
-              },
-              {
-                "id": 2,
-                "role": "Signup",
-                "work": "step.01 휴대폰 인증 : ",
-                "url": "https://user-images.githubusercontent.com/99234582/196132040-c2019575-20fd-40c3-a423-99737cb4cb95.mp4",
-                "text": "fetch함수를 이용하여 api를 호출하고 POST로 user의 정보를 보낸다. 번호를 보내면 인증번호를 입력하여 DB로 다시 보낼 toggle을 생성한다. 문자로 받은 인증번호를 담아놓은 user의 휴대폰 번호와 같이 보내준다."
-              },
-              {
-                "id": 3,
-                "role": "Signup",
-                "work": "step.02 약관 동의",
-                "url": "https://user-images.githubusercontent.com/99234582/196134181-fc848814-cc87-4dfb-8c40-c3bab8f11fad.mp4",
-                "text": "체크박스를 이용하여 필수체크선택시 다음 step으로 넘어간다. 전체 선택시 체크박스 전체 선택 또는 하나 해제시 전체 선택 해제"
-              },
-              {
-                "id": 4,
-                "role": "Signup",
-                "work": "step.03 정보 입력후 가입완료",
-
-                "url": "https://user-images.githubusercontent.com/99234582/196135319-8d243855-88f8-4304-98de-a4ff29592f6b.mp4",
-                "content": "window.localstorage를 이용하여 step01에서 기재한 user의 정보를 해당 입력칸에 담는다. 아이디를 DB에 보내어 user데이터에서 확인후 중복체크를 해준다. 비밀번호와 이메일을 입력시 유효성 검사를 하고 문제가 없을 시 아래 체크박스중 하나를 선택해야 가입이 완료된다. 가입완료 버튼을 클릭하면 메인페이지로 이동한다."
-              },
-              {
-                "id": 5,
-                "role": "User find & Password find",
-                "work": "아이디 찾기 및 임시비밀번호 받기",
-                "url": "https://user-images.githubusercontent.com/99234582/196136005-61c8834b-b045-4915-8bad-77875ba85255.mp4",
-                "text": "fetch함수를 이용하여 POST메서드로 user정보를 보낸후 DB에서 비교하여 아이디 또는 임시 비밀번호를 받는다."
-              },
-              {
-                "id": 6,
-                "role": "코드 및 에러",
-                "work": "Blog로 가시면 더 볼수 있습니다.",
-                "url": "https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4",
-                "text": "프로젝트 타이틀 옆 Project Blog버튼으로 해당 블로그를 방문하시면 프로젝트시 코드나 에러관련 리뷰를 더 자세히 볼 수 있습니다."
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "contentTitle": "STARBOX",
-      "data": [
-        {
-          "contentId": 1,
-          "firstTitle": "프로젝트 소개",
-          "firstAbout": "이전 프로젝트였던 E-commerce에서 좀더 다양한 기능을 접할수 있는 사이트를 고려하던 중 기본 CRUD는 물론 새로운 기능과 UI를 접할 수 있는 MEGABOX를 선정하게 되었습니다. fetch함수를 이용하여 api로 연결하여 데이터를 받아오고 UI부분도 스스로 sass를 이용하여 구현하였습니다.",
-          "team": "개발 인원 및 기간",
-          "date": "2022/09/19~2022/09/30",
-          "member": "FE 4명, BE 2명",
-
-          "skill": "적용기술",
-          "lang": "React.js, Javascript",
-          "library": "React js, sass, styled-component",
-          "CommunityTools": "Trello, Notion, Zep, Zoom, Slack",
-          "VersionControlTool": "Git",
-          "thirdTitle": "프로젝트 구현기능",
-          "thirdAbout": {
-            "all": "메인페이지, 영화페이지, 예약페이지, 로그인, 회원가입, 아이디/비밀번호 찾기, 상세페이지",
-            "team": "Main-page 섹션별 컴포넌트화 작업",
-            "roleContent": [
-              {
-                "id": 0,
-                "role": "UI ",
-                "work": "Header별 UI 및 기능: ",
-                "url": "https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4",
-                "text": "Nav Link를 이용한 페이지별 링크 연결, user의 location정보 UI구현 및 링크 연결, Subnav bar Tab구현 (클릭시 Drop-down메뉴 리스트 구현 close버튼으로 닫기) , 카테고리별 링크 연결, 로그인 pop-up 모달 구현, 회원가입 컴포넌트 별 아이디/비밀번호 찾기 레이아웃 및 스타일 구현"
-              },
-              {
-                "id": 1,
-                "role": "Login",
-                "work": "로그인/로그아웃 : ",
-                "url": "https://user-images.githubusercontent.com/99234582/199281315-56606e3c-ccbd-46be-948a-030aa6a4201a.mp4",
-                "text": "fetch를 이용하여 post로 user정보 보내기, DB의 user 정보 데이터를 비교 후 token받아서 localstorage에 담기, 로그아웃을 클릭하면 이벤트핸들러를 이용하여 localstorage에 token을 지우기"
-              },
-              {
-                "id": 2,
-                "role": "Signup",
-                "work": "step.01 휴대폰 인증 : ",
-                "url": "https://user-images.githubusercontent.com/99234582/196132040-c2019575-20fd-40c3-a423-99737cb4cb95.mp4",
-                "text": "fetch함수를 이용하여 api를 호출하고 POST로 user의 정보를 보낸다. 번호를 보내면 인증번호를 입력하여 DB로 다시 보낼 toggle을 생성한다. 문자로 받은 인증번호를 담아놓은 user의 휴대폰 번호와 같이 보내준다."
-              },
-              {
-                "id": 3,
-                "role": "Signup",
-                "work": "step.02 약관 동의",
-                "url": "https://user-images.githubusercontent.com/99234582/196134181-fc848814-cc87-4dfb-8c40-c3bab8f11fad.mp4",
-                "text": "체크박스를 이용하여 필수체크선택시 다음 step으로 넘어간다. 전체 선택시 체크박스 전체 선택 또는 하나 해제시 전체 선택 해제"
-              },
-              {
-                "id": 4,
-                "role": "Signup",
-                "work": "step.03 정보 입력후 가입완료",
-
-                "url": "https://user-images.githubusercontent.com/99234582/196135319-8d243855-88f8-4304-98de-a4ff29592f6b.mp4",
-                "content": "window.localstorage를 이용하여 step01에서 기재한 user의 정보를 해당 입력칸에 담는다. 아이디를 DB에 보내어 user데이터에서 확인후 중복체크를 해준다. 비밀번호와 이메일을 입력시 유효성 검사를 하고 문제가 없을 시 아래 체크박스중 하나를 선택해야 가입이 완료된다. 가입완료 버튼을 클릭하면 메인페이지로 이동한다."
-              },
-              {
-                "id": 5,
-                "role": "User find & Password find",
-                "work": "아이디 찾기 및 임시비밀번호 받기",
-                "url": "https://user-images.githubusercontent.com/99234582/196136005-61c8834b-b045-4915-8bad-77875ba85255.mp4",
-                "text": "fetch함수를 이용하여 POST메서드로 user정보를 보낸후 DB에서 비교하여 아이디 또는 임시 비밀번호를 받는다."
-              },
-              {
-                "id": 6,
-                "role": "코드 및 에러",
-                "work": "Blog로 가시면 더 볼수 있습니다.",
-                "url": "https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4",
-                "text": "프로젝트 타이틀 옆 Project Blog버튼으로 해당 블로그를 방문하시면 프로젝트시 코드나 에러관련 리뷰를 더 자세히 볼 수 있습니다."
-              }
-            ]
-          }
-        }
-      ]
     }
   ],
   "project": {
     "projectMain": [
       {
         "id": 0,
+        "title": "STARBOX",
+        "src": "https://user-images.githubusercontent.com/99234582/196137091-a6c63d61-c91f-4e6d-a4d9-ecd1097736e6.png",
+        "url": "https://www.youtube.com/watch?v=WFLoaP3cGkg",
+        "readme": "https://github.com/miogy/2ND-PROJECT_STARBOX/blob/main/README.md",
+        "blog": "https://velog.io/@miogy/JUSTCODE-2nd-Project-STARBOX"
+      },
+      {
+        "id": 1,
         "title": "ALE6IX",
         "src": "https://velog.velcdn.com/images/ch00ng10000/post/3ff906f7-d6ea-43a6-92f1-fc37b06e3eae/image.png",
         "url": "https://youtu.be/X2f3YSx6h0Q",
         "readme": "https://github.com/miogy/1ST-PROJECT_ALE6IX",
         "blog": "https://velog.io/@miogy/JUSTCODE-1st-Project-ALE6IX"
-      },
-      {
-        "id": 1,
-        "title": "STARBOX",
-        "src": "https://user-images.githubusercontent.com/99234582/196137091-a6c63d61-c91f-4e6d-a4d9-ecd1097736e6.png",
-        "url": "https://www.youtube.com/watch?v=WFLoaP3cGkg",
-        "readme": "https://github.com/miogy/2ND-PROJECT_STARBOX/blob/main/README.md",
-        "blog": "https://velog.io/@miogy/JUSTCODE-2nd-Project-STARBOX"
-      },
-      {
-        "id": 2,
-        "title": "STARBOX",
-        "src": "https://user-images.githubusercontent.com/99234582/196137091-a6c63d61-c91f-4e6d-a4d9-ecd1097736e6.png",
-        "url": "https://www.youtube.com/watch?v=WFLoaP3cGkg",
-        "readme": "https://github.com/miogy/2ND-PROJECT_STARBOX/blob/main/README.md",
-        "blog": "https://velog.io/@miogy/JUSTCODE-2nd-Project-STARBOX"
       }
     ]
   }

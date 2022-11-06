@@ -1,6 +1,6 @@
 import { useState } from "react";
-import TeamProject from "../ProjectPage/TeamProject";
-import ToyProject from "../ProjectPage/ToyProject";
+import TeamProject from "./TeamProject";
+import ToyProject from "./ToyProject";
 
 function ProjectPage() {
   const [category, setCategory] = useState(0);

@@ -125,8 +125,8 @@ const Title = styled.div`
         padding-right: 20px;
         text-decoration: none;
         list-style: none;
-        font-size: 36px;
-        height: 48px;
+        font-size: 32px;
+        height: 42px;
       }
       .active {
         border-bottom: 3px solid #000;
@@ -145,11 +145,11 @@ const Title = styled.div`
         padding-right: 20px;
         text-decoration: none;
         list-style: none;
-        font-size: 32px;
-        height: 42px;
+        font-size: 26px;
+        height: 36px;
       }
       .active {
-        border-bottom: 3px solid #000;
+        border-bottom: 2px solid #000;
       }
     }
   }
@@ -166,14 +166,14 @@ const Title = styled.div`
         padding-right: 8px;
         text-decoration: none;
         list-style: none;
-        font-size: 28px;
-        height: 36px;
+        font-size: 20px;
+        height: 26px;
         .hide {
           display: none;
         }
       }
       .active {
-        border-bottom: 3px solid #000;
+        border-bottom: 2px solid #000;
       }
     }
   }
@@ -190,14 +190,14 @@ const Title = styled.div`
         padding-right: 6px;
         text-decoration: none;
         list-style: none;
-        font-size: 26px;
-        height: 34px;
+        font-size: 20px;
+        height: 26px;
         .hide {
           display: none;
         }
       }
       .active {
-        border-bottom: 3px solid #000;
+        border-bottom: 2px solid #000;
       }
     }
   }

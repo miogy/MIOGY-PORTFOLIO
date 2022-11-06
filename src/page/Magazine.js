@@ -3,7 +3,7 @@ import HTMLFlipBook from "react-pageflip";
 import styled from "styled-components";
 import { SiAdobeacrobatreader } from "react-icons/si";
 
-function Info() {
+function Magazine() {
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(0);
 
@@ -54,7 +54,7 @@ function Info() {
     </StyledInfo>
   );
 }
-export default Info;
+export default Magazine;
 
 const pageData = [
   {

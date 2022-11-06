@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { BsBook } from "react-icons/bs";
+// import { BsBook } from "react-icons/bs";
 import { GrDocumentPdf } from "react-icons/gr";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
 
@@ -34,13 +34,13 @@ function Footer() {
               alt="velog"
             />
           </span>
-          <Link to="/info" className="styleNone footerIcon">
+          {/* <Link to="/info" className="styleNone footerIcon">
             <BsBook
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             />
-          </Link>
+          </Link> */}
           <span
             className="pdfLink styleNone footerIcon"
             onClick={() => {

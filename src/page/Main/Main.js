@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import About from "./About";
-import Slider from "./Slider";
+import About from "./about/About";
+import Slider from "./Slider/Slider";
 
-function Main() {
+function Main({ project }) {
   return (
     <StyledMain>
       <div className="mainContentWrap">
@@ -10,7 +10,7 @@ function Main() {
           <Slider />
         </div>
         <div className="aboutComponentWrap">
-          <About />
+          <About projectData={project} />
         </div>
       </div>
     </StyledMain>

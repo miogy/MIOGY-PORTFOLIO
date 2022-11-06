@@ -1,0 +1,221 @@
+{
+  "toyproject": [
+    {
+      "id": 0,
+      "projectTitle": "Portfolio",
+      "imgSrc": "https://velog.velcdn.com/images/miogy/post/a70db06e-b88b-4374-abf9-3994ffeacec3/image.png",
+      "readme": "https://github.com/miogy/MIOGY-PORTFOLIO",
+      "blog": "https://velog.io/@miogy/Portfolio-%EC%A0%9C%EC%9E%91%EA%B8%B0",
+      "about": " React기반 포트폴리오 사이트",
+      "introduce": "CRA, styled-components를 이용하여 제작한 포트폴리오 사이트입니다.",
+      "site": "https://miogy.github.io/Pre-Onboarding_LULULAB/",
+      "projectContent": {
+        "contentsId": 0,
+        "title": "Portfolio",
+        "firstAbout": "React기반 포트폴리오 사이트입니다. 매거진스타일을 적용하였고 이미지 슬라이드나 프로젝트는 추가될 예정임으로 하나의 컴포넌트내에 json형태의 데이터를 만들고 fetch함수와 map을 이용하여 작업하였습니다.",
+        "stack": "적용기술",
+        "lang": "React js, javascript",
+        "style": "sass, styled-component",
+        "library": "react-icons, react-slider-swiper, page-flip,",
+        "routing": "react-router-dom",
+        "VersionControlTool": "Git",
+        "roleContent": [
+          {
+            "realizeId": 0,
+            "realizeTitle": "프로젝트 구조",
+            "realizeUrl": "https://velog.velcdn.com/images/miogy/post/214e3367-77cc-4265-a081-275ec9ce8d8b/image.png",
+            "realizeText": "",
+            "realizeCodeTitle": "",
+            "realizeCodeSrc": "https://user-images.githubusercontent.com/99234582/200171003-ea021ab2-9d64-476b-8999-40a2312fc953.png",
+            "realizeExplain": {
+              "fist": "App js : fetch함수를 이용하여 data호출하고 해당 페이지와 컴포넌트에 넘겨준다.",
+              "second": "page폴더 : 페이지와 해당 컴포넌트, 데이터를 담은 컴포넌트를 넣었다.",
+              "fourth": "",
+              "gif": "https://user-images.githubusercontent.com/99234582/200175889-d68b3c8a-d544-4574-b495-e5b33885a143.png"
+            }
+          },
+          {
+            "realizeId": 1,
+            "realizeTitle": "구현한 기능소개",
+            "realizeUrl": "https://user-images.githubusercontent.com/99234582/200163509-6a7ca505-637a-4e28-93a6-c8ff34210ad3.png",
+            "realizeText": "카테고리를 이용하여 메인페이지 내에 콘텐츠가 변경될수 있게 구현하였다.",
+            "realizeCodeTitle": "state를 이용한 카테고리구현",
+            "realizeCodeSrc": "https://user-images.githubusercontent.com/99234582/200179352-f156de65-080b-4db7-98ea-804f63e37a0d.png",
+            "realizeExplain": {
+              "fist": "카테고리별 index를 해당 콘텐츠 자리에 들어갈 컴포넌트로 지정해준 후 state초기값으로 0(첫번째)을 지정해주어 기본 상태는 첫번째 카테고리와 해당 콘텐츠가 보일수 있도록 구현한다.",
+              "second": "Category.js에 있는 카테고리들에 onClick이벤트를 이용해 만들어놓은 인덱스를 카테고리에 맞춰 지정해준다.",
+              "third": "콘텐츠자리에 만들어놓은 카테고리 함수를 넣어준다.",
+              "fourth": "시현 영상",
+              "gif": "https://user-images.githubusercontent.com/99234582/200175252-c82f050c-836c-4eb4-b085-111ce892d365.gif"
+            }
+          },
+          {
+            "realizeId": 2,
+            "realizeTitle": "이미지 슬라이드",
+            "realizeUrl": "https://user-images.githubusercontent.com/99234582/200174432-a63a8d28-fbb4-41c2-a030-f55a6b41c724.png",
+            "realizeText": "Swiper를 이용한 이미지 슬라이드",
+            "realizeCodeTitle": "Swiper사용하기",
+            "realizeCodeSrc": "https://user-images.githubusercontent.com/99234582/200179414-a7c70412-e039-42cc-8685-c178eae4219d.png",
+            "realizeExplain": {
+              "fist": "슬라이드에 들어가는 이미지의 수정과 변경되는 디자인을 고려하여 ImgSliderData.js로 따로 이미지 데이터를 관리하였다.",
+              "second": "이미지 데이터를 import하여 Swiper내에 배열로 만들어진 데이터를 map()으로 구현해준다.",
+              "third": "SiwiperSlide에 id를 key값으로 지정해주면 내가 입력한 id순서대로 슬라이드가 구현된 것을 볼수 있다.",
+              "fourth": "시현 영상",
+              "gif": "https://user-images.githubusercontent.com/99234582/200175801-6f1c278a-1795-4afd-aa66-8151f0edda97.gif"
+            }
+          },
+          {
+            "realizeId": 3,
+            "realizeTitle": "props 데이터 연결",
+            "realizeUrl": "https://user-images.githubusercontent.com/99234582/200176347-e28a9592-b814-49a8-8864-c1399c37b320.png",
+            "realizeText": "App.js에서 props로 받은 데이터 연결하기",
+            "realizeCodeTitle": "카드형과 콘텐츠를 키값인 id로 연결",
+            "realizeCodeSrc": "https://user-images.githubusercontent.com/99234582/200179471-6b331876-d9bf-44df-851b-5aaca874871d.png",
+            "realizeExplain": {
+              "fist": "props로 받은 데이터를 map()으로 연결한다. 데이터의 키값으로 카드와 모달의 데이터를 연결하기위해 state로 지정된 키값과 함께 onClick이벤트로 구현될 modal컴포넌트에 넘겨준다.",
+              "second": "카드에 구현된 데이터의 id와 콘텐츠의 id가 같을 경우 map()으로 호출하여 반환한다.",
+              "third": "",
+              "fourth": "시현 영상",
+              "gif": "https://velog.velcdn.com/images/miogy/post/545e1c97-8dde-4e34-a270-1d5c9a1ea554/image.gif"
+            }
+          },
+          {
+            "realizeId": 4,
+            "realizeTitle": "프로젝트 소개글을 넣는 과정에서 발생한 warning메세지",
+            "realizeUrl": "https://user-images.githubusercontent.com/99234582/200179637-8ed3cee2-702f-422d-a5d8-52b36d40919b.png",
+            "realizeText": "props로 받아온 배열형태의 데이터를 map함수로 호출하여 배열을 반환하는 과정에서 나타난 경고메세지로 화살표 함수의 반환에 대한 경고메세지 인것 같다.",
+            "realizeCodeTitle": "문제해결",
+            "realizeCodeSrc": "https://user-images.githubusercontent.com/99234582/200179682-db97de15-bcba-4093-a73d-26cb145ef4e4.png",
+            "realizeExplain": {
+              "fist": "stackoverflow에서 나와 같이 If문을 사용하여 조건을 처리한후 렌더링하는 경우에 같은 경고메세지를 받은 것을 찾아볼 수 있었다.",
+              "second": "해결방안에 대한 제시를 남겨놓은 글중에 filter를 사용하여 조건을 처리하는 방법도 있었지만 나는 지금의 코드에서 약간만 수정하였다.",
+              "third": "",
+              "fourth": "",
+              "gif": "https://user-images.githubusercontent.com/99234582/200175889-d68b3c8a-d544-4574-b495-e5b33885a143.png"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "projectTitle": "LULULAB",
+      "imgSrc": "https://velog.velcdn.com/images/miogy/post/de06ef02-9885-49d9-b5dd-2fc15944fc46/image.png",
+      "readme": "",
+      "blog": "",
+      "about": " 예약시스템",
+      "introduce": "룰루랩의 기업과제인 병원 예약 시스템을 개발하였습니다. 예약등록과 예약조회, 예약삭제로 이루어져있습니다.",
+      "site": "https://miogy.github.io/Pre-Onboarding_LULULAB/",
+      "projectContent": {
+        "contentsId": 0,
+        "title": "LULULAB",
+        "firstTitle": "프로젝트 소개",
+        "firstAbout": "예약시스템",
+        "date": "2022/10/21~2022/10/26",
+        "stack": "적용기술",
+        "lang": "React js, sass, styled-component",
+        "VersionControlTool": "Git",
+        "roleContent": [
+          {
+            "realizeId": 0,
+            "realizeTitle": "프로젝트 구조",
+            "realizeUrl": "",
+            "realizeText": "App js에 Router, 데이터를 호출하고 각자의 컴포넌트로 넘겨준다. Main컴포넌트 내에 이미지 슬라이드와 About컴포넌트로 나누고 About컴포넌트에 카테고리를 이용하여 콘텐츠가 변경되게 구성하였다.",
+            "realizeCodeTitle": "state를 이용한 카테고리구현",
+            "realizeCodeSrc": "https://user-images.githubusercontent.com/99234582/200159286-ec0f0a22-4d32-4574-a2b1-84519e1bd2df.png",
+            "realizeExplain": {
+              "fist": "카테고리별 index를 해당 콘텐츠 자리에 들어갈 컴포넌트로 지정해준 후 state초기값으로 0(첫번째)을 지정해주어 기본 상태는 첫번째 카테고리와 해당 콘텐츠가 보일수 있도록 구현한다.",
+              "second": "Category.js에 있는 카테고리들에 onClick이벤트를 이용해 만들어놓은 인덱스를 카테고리에 맞춰 지정해준다.",
+              "third": "콘텐츠자리에 만들어놓은 카테고리 함수를 넣어준다."
+            }
+          },
+          {
+            "realizeId": 1,
+            "realizeTitle": "UI",
+            "realizeUrl": "https://user-images.githubusercontent.com/99234582/200163509-6a7ca505-637a-4e28-93a6-c8ff34210ad3.png",
+            "realizeText": "",
+            "realizeCodeTitle": "카테고리",
+            "realizeCodeSrc": "코드",
+            "realizeExplain": "코드설명"
+          },
+          {
+            "realizeId": 2,
+            "realizeTitle": "이미지 슬라이드",
+            "realizeUrl": "",
+            "realizeText": "",
+            "realizeCodeTitle": "Swiper사용하기",
+            "realizeCodeSrc": "코드",
+            "realizeExplain": "코드설명"
+          },
+          {
+            "realizeId": 3,
+            "realizeTitle": "props 데이터 연결",
+            "realizeUrl": "",
+            "realizeText": "",
+            "realizeCodeTitle": "fetch와 map()",
+            "realizeCodeSrc": "코드",
+            "realizeExplain": "코드설명"
+          },
+          {
+            "realizeId": 4,
+            "realizeTitle": "Page flip",
+            "realizeUrl": "",
+            "realizeText": "",
+            "realizeCodeTitle": "카테고리",
+            "realizeCodeSrc": "코드",
+            "realizeExplain": "코드설명"
+          },
+          {
+            "realizeId": 5,
+            "realizeTitle": "json 데이터 만들기",
+            "realizeUrl": "",
+            "realizeText": "",
+            "realizeCodeTitle": "카테고리",
+            "realizeCodeSrc": "코드",
+            "realizeExplain": "코드설명"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "projectTitle": "PLAY keyboard",
+      "imgSrc": "https://velog.velcdn.com/images/miogy/post/d75837a6-a442-41db-8559-2e3b8a233ee1/image.png",
+      "readme": "",
+      "blog": "",
+      "about": " Pre-onboarding 기업과제",
+      "introduce": "비트바이트 모바일 반응형 플레이 키보드 웹 스토어 프로젝트입니다.",
+      "site": "https://miogy.github.io/Pre-Onboarding_LULULAB/",
+      "projectContent": {
+        "contentsId": 2,
+        "title": "PLAY keyboard",
+        "firstTitle": "프로젝트 소개",
+        "firstAbout": "예약시스템",
+        "date": "2022/10/21~2022/10/26",
+        "stack": "적용기술",
+        "lang": "React js, sass, styled-component",
+        "VersionControlTool": "Git"
+      }
+    },
+    {
+      "id": 3,
+      "projectTitle": "JUSTGRAM",
+      "imgSrc": "https://velog.velcdn.com/images/miogy/post/dfd03448-1e9c-4d00-b2e9-3dcfbee08f49/image.png",
+      "readme": "",
+      "blog": "",
+      "about": "인스타그램만들기",
+      "introduce": "피드를 컴포넌트화하여 mock-up데이터로 구현하고 댓글추가등 기능구현.",
+      "site": "https://miogy.github.io/Pre-Onboarding_LULULAB/",
+      "projectContent": {
+        "contentsId": 3,
+        "title": "JUSTGRAM",
+        "firstTitle": "프로젝트 소개",
+        "firstAbout": "예약시스템",
+        "date": "2022/10/21~2022/10/26",
+        "stack": "적용기술",
+        "lang": "React js, sass, styled-component",
+        "VersionControlTool": "Git"
+      }
+    }
+  ]
+}

@@ -1,22 +1,22 @@
 import styled from "styled-components";
-import Category from "./about/Category";
-import DesignSkill from "./about/DesignSkill";
-import Workexperience from "./about/Workexperience";
-import TechStack from "./about/TechStack";
-import ProjectCard from "./about/ProjectCard";
-import ToyProjectCard from "./about/ToyProjectCard";
+import Category from "./Category";
+import DesignSkill from "./DesignSkill";
+import Workexperience from "./Workexperience";
+import TechStack from "./TechStack";
+import ProjectCard from "./ProjectCard";
+import ToyProjectCard from "./ToyProjectCard";
 
 import { useState } from "react";
 
-function About() {
+function About({ projectData }) {
   const [tab, setTab] = useState(0);
 
-  const stackContent = {
+  const categoryTab = {
     0: <TechStack />,
     1: <Workexperience />,
     2: <DesignSkill />,
     3: <ProjectCard />,
-    4: <ToyProjectCard />,
+    4: <ToyProjectCard projectData={projectData} />,
   };
 
   return (
@@ -24,7 +24,7 @@ function About() {
       <div className="aboutContainer">
         <h3>About</h3>
         <Category tab={tab} setTab={setTab} />
-        <div className="contentContainer">{stackContent[tab]}</div>
+        <div className="contentContainer">{categoryTab[tab]}</div>
       </div>
     </AboutWrap>
   );
@@ -82,14 +82,14 @@ const AboutWrap = styled.div`
   @media screen and (max-width: 979px) and (min-width: 780px) {
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 10%;
     .aboutContainer {
       width: 100%;
       margin: 0 auto;
       h3 {
+        margin: 20px 0 20px 0px;
         padding-left: 40px;
         float: left;
-        font-size: 38px;
+        font-size: 34px;
         font-weight: 300;
         letter-spacing: -0.12em;
         color: #999;
@@ -108,8 +108,9 @@ const AboutWrap = styled.div`
       width: 100%;
       margin: 0 auto;
       h3 {
+        margin: 20px 0 20px 0px;
         float: left;
-        font-size: 32px;
+        font-size: 28px;
         font-weight: 300;
         letter-spacing: -0.12em;
         color: #999;
@@ -124,12 +125,11 @@ const AboutWrap = styled.div`
   @media screen and (max-width: 580px) and (min-width: 380px) {
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 10%;
     .aboutContainer {
       width: 100%;
       margin: 0 auto;
       h3 {
-        margin: 3%;
+        margin: 8px;
         float: left;
         font-size: 26px;
         font-weight: 300;
@@ -137,15 +137,14 @@ const AboutWrap = styled.div`
         color: #999;
       }
       .contentContainer {
-        width: 100%;
-        margin: 0;
+        width: 90%;
+        margin: 0 auto;
       }
     }
   }
   @media screen and (max-width: 379px) and (min-width: 230px) {
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 10%;
     .aboutContainer {
       width: 100%;
       margin: 0 auto;

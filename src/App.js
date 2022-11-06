@@ -1,22 +1,30 @@
 import Main from "./page/Main/Main";
 import Headers from "./component/Headers";
 import Footer from "./component/Footer";
-import Info from "./page/Info";
 import styled from "styled-components";
-import Mypage from "./page/Mypage";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import ProjectPage from "./page/Main/ProjectPage";
+import { useEffect, useState } from "react";
+import Magazine from "./page/Magazine";
+import ProjectPage from "./page/ProjectPage/ProjectPage";
 
 function App() {
+  const [projectData, setProjectData] = useState([]);
+
+  useEffect(() => {
+    fetch("/data/toyproject.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setProjectData(data.toyproject);
+      });
+  }, []);
   return (
     <StyledApp>
       <HashRouter className="routerWrap">
         <Headers className="headerWrap" />
         <Routes className="componentWrap">
-          <Route path="/" element={<Main />} />
-          <Route path="/info" element={<Info />} />
-          <Route path="/page" element={<Mypage />} />
-          <Route path="/project" element={<ProjectPage />} />
+          <Route path="/" element={<Main project={projectData} />} />
+          <Route path="/magazine" element={<Magazine />} />
+          <Route path="/projectpage" element={<ProjectPage />} />
         </Routes>
         <Footer />
       </HashRouter>

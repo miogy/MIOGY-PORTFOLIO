@@ -1,6 +1,6 @@
 import { AiFillPlayCircle } from "react-icons/ai";
 import { useState, useEffect, useRef } from "react";
-import ProjectData from "./ProjectData";
+import ProjectDetail from "./ProjectDetail";
 
 import styled from "styled-components";
 
@@ -132,7 +132,7 @@ function ProjectCard() {
 
       {prjModal === true ? (
         <div className="projectCardModal">
-          <ProjectData
+          <ProjectDetail
             projectTab={projectTab}
             setPrjModal={setPrjModal}
             project={project.content}
@@ -170,7 +170,7 @@ const StyledProject = styled.div`
             position: relative;
             .imgContent {
               width: 500px;
-              height: 300px;
+              height: 280px;
             }
             .projectPage {
               width: 160px;
@@ -257,7 +257,7 @@ const StyledProject = styled.div`
             position: relative;
             .imgContent {
               width: 500px;
-              height: 300px;
+              height: 280px;
             }
             .projectPage {
               width: 160px;
@@ -433,7 +433,7 @@ const StyledProject = styled.div`
             position: relative;
             .imgContent {
               width: 300px;
-              height: 180px;
+              height: 170px;
             }
             .projectPage {
               width: 160px;

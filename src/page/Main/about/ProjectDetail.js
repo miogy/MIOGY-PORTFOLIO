@@ -97,7 +97,7 @@ function ProjectList({ project, setPrjModal }) {
   );
 }
 
-function ProjectData({ projectTab, setPrjModal, project }) {
+function ProjectDetail({ projectTab, setPrjModal, project }) {
   return (
     <ProjectDataWrap>
       <div className="projectListContainer">
@@ -105,12 +105,14 @@ function ProjectData({ projectTab, setPrjModal, project }) {
           <ProjectList project={project[0]} setPrjModal={setPrjModal} />
         ) : projectTab === 1 ? (
           <ProjectList project={project[1]} setPrjModal={setPrjModal} />
+        ) : projectTab === 2 ? (
+          <ProjectList project={project[2]} setPrjModal={setPrjModal} />
         ) : null}
       </div>
     </ProjectDataWrap>
   );
 }
-export default ProjectData;
+export default ProjectDetail;
 
 const ProjectDataWrap = styled.div`
   width: 100%;
