@@ -2,6 +2,10 @@
 
 포트폴리오용 사이트를 제작
 
+👇 사이트 바로가기
+
+[![](https://velog.velcdn.com/images/miogy/post/214e3367-77cc-4265-a081-275ec9ce8d8b/image.png)](https://miogy.netlify.app/)
+
 ## 언어
 
 javascript, react js
@@ -12,12 +16,6 @@ javascript, react js
 - Style : styled-components, sass
 - Routing : react-router-dom,
 - Slider : swiper
-
-## Screenshots
-
-### WEB
-
-<img src="https://velog.velcdn.com/images/miogy/post/ed7a2893-437c-4182-8ca7-51237c6538eb/image.png" width="40%"> 
 
 ### 구현기능
 
