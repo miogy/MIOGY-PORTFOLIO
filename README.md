@@ -1,5 +1,7 @@
 # PORTFOLIO
 
+포트폴리오용 사이트를 제작
+
 ## 언어
 
 javascript, react js
