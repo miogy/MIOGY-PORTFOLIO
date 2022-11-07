@@ -96,6 +96,29 @@
           }
         ]
       }
+    },
+    {
+      "id": 1,
+      "projectTitle": "LULULAB",
+      "imgSrc": "https://velog.velcdn.com/images/miogy/post/de06ef02-9885-49d9-b5dd-2fc15944fc46/image.png",
+      "readme": "https://github.com/miogy/Pre-Onboarding_LULULAB",
+      "blog": "",
+      "about": " 예약시스템",
+      "introduce": "룰루랩의 기업과제인 병원 예약 시스템을 개발하였습니다. 예약등록과 예약조회, 예약삭제로 이루어져있습니다.",
+      "site": "https://miogy.github.io/Pre-Onboarding_LULULAB/",
+      "projectContent": {
+        "contentsId": 0,
+        "title": "LULULAB",
+        "firstTitle": "프로젝트 소개",
+        "firstAbout": "예약시스템",
+        "date": "2022/10/21~2022/10/26",
+        "stack": "적용기술",
+        "lang": "React js, javascript",
+        "style": "sass, styled-component",
+        "library": "react-icons",
+        "routing": "react-router-dom",
+        "VersionControlTool": "Git"
+      }
     }
   ]
 }
