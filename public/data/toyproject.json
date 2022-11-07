@@ -117,7 +117,68 @@
         "style": "sass, styled-component",
         "library": "react-icons",
         "routing": "react-router-dom",
-        "VersionControlTool": "Git"
+        "VersionControlTool": "Git",
+        "roleContent": [
+          {
+            "realizeId": 0,
+            "realizeTitle": "프로젝트 구조",
+            "realizeUrl": "https://user-images.githubusercontent.com/99234582/196798277-16eaadb4-79c3-43c1-993c-451275c7343c.png",
+            "realizeText": "",
+            "realizeCodeTitle": "",
+            "realizeCodeSrc": "https://velog.velcdn.com/images/miogy/post/7e93a2dc-b9df-4ea7-8367-5fe3eb1a1e10/image.png",
+            "realizeExplain": {
+              "fist": "index js : fetch를 사용하여 데이터를 호출하여 이를 예약하기와 예약확인 각각 넘겨준다.",
+              "second": "component폴더 : modal로 구성된 예약 시스템이 들어있다.",
+              "fourth": "",
+              "gif": "https://user-images.githubusercontent.com/99234582/200202671-f2fa778b-1d43-4cc6-8699-5f059dafc6bf.gif"
+            }
+          },
+          {
+            "realizeId": 1,
+            "realizeTitle": "구현한 기능소개",
+            "realizeUrl": "https://user-images.githubusercontent.com/99234582/200256369-314a76c3-1c4a-4738-847a-abddb3d1650b.png",
+            "realizeText": "탭메뉴 list에 index를 변경값으로 지정학고 state로 담아 클릭시 변경되게 구현",
+            "realizeCodeTitle": "index로 탭메뉴 구현하기",
+            "realizeCodeSrc": "https://user-images.githubusercontent.com/99234582/200255932-9ca785ab-d442-4fd0-b027-cb035e36c950.png",
+            "realizeExplain": {
+              "fist": "예약등록은 삼항연산자로 조건 처리하여 탭메뉴에 따라 해당 태그를 구현한다.",
+              "second": "",
+              "third": "",
+              "fourth": "시현 영상",
+              "gif": "https://user-images.githubusercontent.com/99234582/200222091-5ef9683e-eb1c-48ad-86c1-8d4d3c1c0336.gif"
+            }
+          },
+          {
+            "realizeId": 2,
+            "realizeTitle": "onChange를 이용한 예약등록",
+            "realizeUrl": "https://user-images.githubusercontent.com/99234582/200257625-46b343e7-6dd8-4b92-945e-7b3885a672b5.png",
+            "realizeText": "clear로 빈값을 담은 배열을 준비한 후, 데이터를 담을 폼을 state로 관리하여 준비한 clear를 초기값으로 담는다. props로 받은  onSendAppointment 데이터에 새로 추가될 객체의 body에 들어갈 value를 지정해주고 AddWrap js(입력값을 이벤트로 받는 컴포넌트)에 넘겨준다.",
+            "realizeCodeTitle": "",
+            "realizeCodeSrc": "https://user-images.githubusercontent.com/99234582/200258329-53215d40-bbb1-4459-9a92-eb369e3f33e9.png",
+            "realizeExplain": {
+              "fist": "입력값을 받는 input태그에 onChang이벤트를 적용하고 해당 키값을 지정해주어 새로운 배열을 스프레드 연산자로 받는다.",
+              "second": "",
+              "third": "",
+              "fourth": "시현 영상",
+              "gif": "https://user-images.githubusercontent.com/99234582/200221555-42cf0f65-8ba0-4b24-87e7-b6a006473823.gif"
+            }
+          },
+          {
+            "realizeId": 3,
+            "realizeTitle": "휴대폰 번호로 예약 취소하기",
+            "realizeUrl": "https://user-images.githubusercontent.com/99234582/200260769-1aa05611-dea8-4122-a59c-64584fc8fdde.png",
+            "realizeText": "",
+            "realizeCodeTitle": "onChang이벤트로 받은 value값과 props로 받은 키값으로 비교하기",
+            "realizeCodeSrc": "https://user-images.githubusercontent.com/99234582/200259835-0b5dd532-053b-4c55-9d51-db936f595250.png",
+            "realizeExplain": {
+              "fist": "휴대폰 번호 입력 input에 onChange이벤트를 적용.",
+              "second": "if문을 사용하여 삭제버튼 기능을 만들었다.",
+              "third": "받은 props의 휴대폰 번호와 e.target.value로 받은 입력값과  같을경우 리스트에 구현되지 않는다.",
+              "fourth": "시현 영상",
+              "gif": "https://user-images.githubusercontent.com/99234582/200220730-27a956ec-d5b1-468e-a9af-8be1c895f700.gif"
+            }
+          }
+        ]
       }
     }
   ]
