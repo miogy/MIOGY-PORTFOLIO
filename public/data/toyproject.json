@@ -8,7 +8,7 @@
       "blog": "https://velog.io/@miogy/Portfolio-%EC%A0%9C%EC%9E%91%EA%B8%B0",
       "about": " React기반 포트폴리오 사이트",
       "introduce": "CRA, styled-components를 이용하여 제작한 포트폴리오 사이트입니다.",
-      "site": "https://miogy.github.io/Pre-Onboarding_LULULAB/",
+      "site": "https://miogy.netlify.app/",
       "projectContent": {
         "contentsId": 0,
         "title": "Portfolio",
@@ -104,7 +104,7 @@
       "readme": "https://github.com/miogy/Pre-Onboarding_LULULAB",
       "blog": "",
       "about": " 예약시스템",
-      "introduce": "룰루랩의 기업과제인 병원 예약 시스템을 개발하였습니다. 예약등록과 예약조회, 예약삭제로 이루어져있습니다.",
+      "introduce": "룰루랩의 기업과제인 병원 예약 시스템을 개발하였습니다. 구현사항은 예약등록, 예약자명 또는 예약자의 휴대폰 번호로 조회하기, 휴대폰 번호를 입력하여 예약삭제를 구현하였습니다.",
       "site": "https://miogy.github.io/Pre-Onboarding_LULULAB/",
       "projectContent": {
         "contentsId": 0,
@@ -127,8 +127,8 @@
             "realizeCodeTitle": "",
             "realizeCodeSrc": "https://velog.velcdn.com/images/miogy/post/7e93a2dc-b9df-4ea7-8367-5fe3eb1a1e10/image.png",
             "realizeExplain": {
-              "fist": "index js : fetch를 사용하여 데이터를 호출하여 이를 예약하기와 예약확인 각각 넘겨준다.",
-              "second": "component폴더 : modal로 구성된 예약 시스템이 들어있다.",
+              "fist": "index js : fetch를 사용하여 데이터를 호출하여 이를 예약하기와 예약확인 버튼에 props로 넘겨준다.",
+              "second": "component폴더 : modal로 구성되어 있는 예약 시스템의 리스트와 예약하기 폼, 조회하기의 컴포넌트들이 들어있다.",
               "fourth": "",
               "gif": "https://user-images.githubusercontent.com/99234582/200202671-f2fa778b-1d43-4cc6-8699-5f059dafc6bf.gif"
             }
@@ -137,12 +137,12 @@
             "realizeId": 1,
             "realizeTitle": "구현한 기능소개",
             "realizeUrl": "https://user-images.githubusercontent.com/99234582/200256369-314a76c3-1c4a-4738-847a-abddb3d1650b.png",
-            "realizeText": "탭메뉴 list에 index를 변경값으로 지정학고 state로 담아 클릭시 변경되게 구현",
+            "realizeText": "탭메뉴 list에 index를 지정학고 state로 담아 탭메뉴 클릭시 변경되게 구현",
             "realizeCodeTitle": "index로 탭메뉴 구현하기",
-            "realizeCodeSrc": "https://user-images.githubusercontent.com/99234582/200255932-9ca785ab-d442-4fd0-b027-cb035e36c950.png",
+            "realizeCodeSrc": "https://user-images.githubusercontent.com/99234582/200350196-3c9ff663-f181-4999-a6dc-10caf4f7c831.png",
             "realizeExplain": {
-              "fist": "예약등록은 삼항연산자로 조건 처리하여 탭메뉴에 따라 해당 태그를 구현한다.",
-              "second": "",
+              "fist": "탭을 state에 담고 하나의 컴포넌트로 만들어진 콘텐츠에 각 선택된 탭에 따라 보여지는 항목이 달라진다.",
+              "second": "입력값을 받는 콘텐츠 컴포넌트내에 state와 index로 삼항연산자를 이용하여 컴포넌트를 구현한다.",
               "third": "",
               "fourth": "시현 영상",
               "gif": "https://user-images.githubusercontent.com/99234582/200222091-5ef9683e-eb1c-48ad-86c1-8d4d3c1c0336.gif"
@@ -152,7 +152,7 @@
             "realizeId": 2,
             "realizeTitle": "onChange를 이용한 예약등록",
             "realizeUrl": "https://user-images.githubusercontent.com/99234582/200257625-46b343e7-6dd8-4b92-945e-7b3885a672b5.png",
-            "realizeText": "clear로 빈값을 담은 배열을 준비한 후, 데이터를 담을 폼을 state로 관리하여 준비한 clear를 초기값으로 담는다. props로 받은  onSendAppointment 데이터에 새로 추가될 객체의 body에 들어갈 value를 지정해주고 AddWrap js(입력값을 이벤트로 받는 컴포넌트)에 넘겨준다.",
+            "realizeText": "clear로 빈값을 담은 배열을 준비한 후, 데이터를 담을 폼을 state로 관리하고 준비한 clear를 초기값으로 담는다. props로 받은  onSendAppointment 데이터에 새로 추가될 객체의 body에 들어갈 value를 지정해주고 AddWrap js(입력값을 이벤트로 받는 컴포넌트)에 넘겨준다.",
             "realizeCodeTitle": "",
             "realizeCodeSrc": "https://user-images.githubusercontent.com/99234582/200258329-53215d40-bbb1-4459-9a92-eb369e3f33e9.png",
             "realizeExplain": {

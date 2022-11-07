@@ -51,8 +51,7 @@ function ToyProjectDetail({ project, setToyPrjModal, introduce }) {
                           <img src={data.realizeUrl} alt="projectPic" />
                         </li>
                         <li>
-                          <p>{data.realizeText.fist}</p>
-                          <p>{data.realizeText.second}</p>
+                          <p>{data.realizeText}</p>
                         </li>
                         <li className="contentsTitle">
                           {data.realizeCodeTitle}
