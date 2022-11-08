@@ -122,7 +122,7 @@ const ProjectDataWrap = styled.div`
 const ProjectListWrap = styled.div`
   @media screen and (min-width: 1330px) {
     position: relative;
-    width: 90%;
+    width: 900px;
     height: 100vh;
     overflow: scroll;
     margin: 0 auto;
@@ -132,11 +132,10 @@ const ProjectListWrap = styled.div`
       display: none;
     }
     .projectListContainer {
-      width: 1330px;
+      width: 90%;
       margin: 0 auto;
       h4 {
         font-size: 32px;
-        color: #be0a26;
         display: flex;
         align-items: center;
         .projectBtn {
@@ -186,7 +185,7 @@ const ProjectListWrap = styled.div`
                 }
               }
               .contentBoxWrap {
-                width: 980px;
+                width: 100%;
                 margin: 0 auto;
                 display: flex;
                 flex-wrap: wrap;
@@ -228,113 +227,6 @@ const ProjectListWrap = styled.div`
       }
     }
   }
-  @media screen and (max-width: 1329px) and (min-width: 980px) {
-    position: relative;
-    width: 90%;
-    height: 100vh;
-    overflow: scroll;
-    margin: 0 auto;
-    color: #333;
-    text-align: start;
-    ::-webkit-scrollbar {
-      display: none;
-    }
-    .projectListContainer {
-      width: 980px;
-      margin: 0 auto;
-      h4 {
-        font-size: 32px;
-        color: #be0a26;
-        display: flex;
-        align-items: center;
-        .projectBtn {
-          display: flex;
-          align-items: center;
-          span {
-            font-size: 12px;
-            margin-left: 10px;
-            padding: 5px;
-            border: 1px solid lightgray;
-            border-radius: 5px;
-            color: lightgray;
-            cursor: pointer;
-            &:hover {
-              color: #333;
-            }
-          }
-        }
-      }
-      .dataContent {
-        padding: 0;
-
-        li {
-          text-decoration: none;
-          list-style: none;
-          line-height: 26px;
-          margin-bottom: 20px;
-          h5 {
-            font-size: 20px;
-          }
-          .roleContentWrap {
-            border-top: 1px solid lightgray;
-            padding-top: 40px;
-            .projectBox {
-              padding: 0;
-              li {
-                text-decoration: none;
-                list-style: none;
-                line-height: 26px;
-                padding-top: 20px;
-                padding-bottom: 20px;
-                video {
-                  max-width: 580px;
-                  min-width: 300px;
-                  margin: 0 auto;
-                  margin-bottom: 16px;
-                }
-              }
-              .contentBoxWrap {
-                width: 780px;
-                margin: 0 auto;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                border-bottom: 1px solid lightgray;
-                .projectBoxContent {
-                  width: 80%;
-                  margin: 0 auto;
-                }
-              }
-              .projectBoxTitle {
-                padding-top: 40px;
-                strong {
-                  font-size: 18px;
-                  margin-right: 10px;
-                }
-              }
-            }
-          }
-        }
-      }
-      .closeBtn {
-        position: fixed;
-        top: 70px;
-        right: 12%;
-        width: 80px;
-        height: 36px;
-        margin-bottom: 80px;
-        border: 1px solid lightgray;
-        border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0.6);
-        color: #333;
-        z-index: 9999;
-        &:hover {
-          cursor: pointer;
-          font-weight: 600;
-        }
-      }
-    }
-  }
   @media screen and (max-width: 979px) and (min-width: 920px) {
     position: relative;
     width: 90%;
@@ -351,7 +243,6 @@ const ProjectListWrap = styled.div`
       margin: 0 auto;
       h4 {
         font-size: 28px;
-        color: #be0a26;
         display: flex;
         align-items: center;
         .projectBtn {

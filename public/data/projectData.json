@@ -7,15 +7,17 @@
         {
           "contentId": 1,
           "firstTitle": "팀 프로젝트 소개",
-          "firstAbout": "이전 프로젝트였던 E-commerce에서 좀더 다양한 기능을 접할수 있는 사이트를 고려하던 중 기본 CRUD는 물론 새로운 기능과 UI를 접할 수 있는 MEGABOX를 선정하게 되었습니다. fetch함수를 이용하여 api로 연결하여 데이터를 받아오고 UI부분도 스스로 sass를 이용하여 구현하였습니다.",
+          "firstAbout": "이전 프로젝트였던 E-commerce에서 좀더 다양한 기능을 접할수 있는 사이트를 고려하던 중 기본 CRUD는 물론 새로운 기능과 UI를 접할 수 있는 MEGABOX를 선정하게 되었습니다.",
           "team": "개발 인원 및 기간",
           "date": "2022/09/19~2022/09/30",
           "member": "FE 4명, BE 2명",
-
           "skill": "적용기술",
-          "library": "React js, sass, styled-component",
+          "lang": "React.js, Javascript",
+          "library": "sass, styled-component",
           "CommunityTools": "Trello, Notion, Zep, Zoom, Slack",
           "VersionControlTool": "Git",
+          "readme": "https://github.com/miogy/2ND-PROJECT_STARBOX",
+          "blog": "https://velog.io/@miogy/JUSTCODE-2nd-Project-STARBOX",
           "thirdTitle": "프로젝트 구현기능",
           "thirdAbout": {
             "all": "메인페이지, 영화페이지, 예약페이지, 로그인, 회원가입, 아이디/비밀번호 찾기, 상세페이지",
@@ -26,7 +28,9 @@
                 "role": "UI ",
                 "work": "Header별 UI 및 기능: ",
                 "url": "https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4",
-                "text": "Nav Link를 이용한 페이지별 링크 연결, user의 location정보 UI구현 및 링크 연결, Subnav bar Tab구현 (클릭시 Drop-down메뉴 리스트 구현 close버튼으로 닫기) , 카테고리별 링크 연결, 로그인 pop-up 모달 구현, 회원가입 컴포넌트 별 아이디/비밀번호 찾기 레이아웃 및 스타일 구현"
+                "text": "Nav Link를 이용한 페이지별 링크 연결, user의 location정보 UI구현 및 링크 연결, Subnav bar Tab구현 (클릭시 Drop-down메뉴 리스트 구현 close버튼으로 닫기) , 카테고리별 링크 연결, 로그인 pop-up 모달 구현, 회원가입 컴포넌트 별 아이디/비밀번호 찾기 레이아웃 및 스타일 구현",
+                "codeSrc": "",
+                "explain": ""
               },
               {
                 "id": 1,
@@ -94,7 +98,8 @@
           "library": "sass, react-modal, react-dom, react-icons,react-paginate, react-router-dom",
           "CommunityTools": " Notion, Zep, Zoom, Slack",
           "VersionControlTool": "Git",
-
+          "readme": "https://github.com/miogy/1ST-PROJECT_ALE6IX",
+          "blog": "https://velog.io/@miogy/JUSTCODE-1st-Project-ALE6IX",
           "thirdTitle": "프로젝트 구현기능",
           "thirdAbout": {
             "all": "메인페이지, 제품 페이지, 상세페이지, 로그인, 회원가입, 장바구니, 검색 페이지",
