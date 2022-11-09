@@ -186,7 +186,6 @@ const ProjectListWrap = styled.div`
       }
       .dataContent {
         padding: 0;
-
         li {
           text-decoration: none;
           list-style: none;
@@ -223,12 +222,6 @@ const ProjectListWrap = styled.div`
                 padding-bottom: 20px;
                 h5 {
                   margin: 0;
-                }
-                video {
-                  max-width: 580px;
-                  min-width: 300px;
-                  margin: 0 auto;
-                  margin-bottom: 16px;
                 }
                 p {
                   width: 90%;
@@ -282,7 +275,7 @@ const ProjectListWrap = styled.div`
       }
     }
   }
-  @media screen and (max-width: 979px) and (min-width: 920px) {
+  @media screen and (max-width: 1329px) and (min-width: 920px) {
     position: relative;
     width: 90%;
     height: 90vh;
@@ -332,41 +325,44 @@ const ProjectListWrap = styled.div`
             margin: 0;
           }
           ul {
+            width: 100%;
+            text-align: start;
+            padding: 0;
             li {
               p {
                 img {
-                  width: 600px;
-                  margin: 0 auto;
+                  width: 800px;
+                  margin: 0 0 20px 0;
                 }
               }
             }
           }
           .roleContentWrap {
-            border-top: 1px solid lightgray;
+            width: 100%;
             padding-top: 40px;
-
             .projectBox {
-              padding: 0;
-
+              padding: 0 0 20px 0;
+              border-bottom: 1px solid lightgray;
               li {
-                width: 600px;
-                margin: 0 auto;
+                width: 100%;
                 text-decoration: none;
                 list-style: none;
-                line-height: 20px;
+                line-height: 24px;
                 padding-top: 20px;
                 padding-bottom: 20px;
-                font-size: 14px;
-                video {
-                  max-width: 500px;
-                  margin: 0 auto;
-                  margin-bottom: 16px;
+                font-size: 16px;
+                h5 {
+                  margin: 0 0 10px 0;
+                  font-size: 18px;
+                }
+                img {
+                  width: 800px;
                 }
                 p {
-                  width: 90%;
-                  margin: 0 auto;
+                  width: 100%;
                 }
                 .gif {
+                  width: 600px;
                   display: block;
                   margin: 0 auto;
                 }
@@ -415,7 +411,7 @@ const ProjectListWrap = styled.div`
   }
   @media screen and (max-width: 919px) and (min-width: 780px) {
     position: relative;
-    width: 90%;
+    width: 95%;
     height: 82vh;
     overflow: scroll;
     margin: 0 auto;
@@ -425,11 +421,10 @@ const ProjectListWrap = styled.div`
       display: none;
     }
     .projectListContainer {
-      width: 700px;
+      width: 760px;
       margin: 0 auto;
       h4 {
         font-size: 28px;
-        color: #be0a26;
         display: flex;
         align-items: center;
         .projectBtn {
@@ -464,41 +459,45 @@ const ProjectListWrap = styled.div`
             margin: 0;
           }
           ul {
+            width: 100%;
+            text-align: start;
+            padding: 0;
             li {
               p {
                 img {
-                  width: 500px;
-                  margin: 0 auto;
+                  width: 100%;
+                  margin: 0 0 20px 0;
                 }
               }
             }
           }
           .roleContentWrap {
-            border-top: 1px solid lightgray;
+            width: 100%;
             padding-top: 40px;
-
             .projectBox {
-              padding: 0;
-
+              padding: 0 0 20px 0;
+              border-bottom: 1px solid lightgray;
               li {
-                width: 500px;
+                width: 100%;
                 margin: 0 auto;
                 text-decoration: none;
                 list-style: none;
                 line-height: 20px;
                 padding-top: 20px;
                 padding-bottom: 20px;
-                font-size: 14px;
-                video {
-                  max-width: 500px;
-                  margin: 0 auto;
-                  margin-bottom: 16px;
+                font-size: 16px;
+                h5 {
+                  margin: 0 0 10px 0;
+                  font-size: 18px;
+                }
+                img {
+                  width: 100%;
                 }
                 p {
-                  width: 90%;
-                  margin: 0 auto;
+                  width: 100%;
                 }
                 .gif {
+                  width: 600px;
                   display: block;
                   margin: 0 auto;
                 }
@@ -547,7 +546,7 @@ const ProjectListWrap = styled.div`
   }
   @media screen and (max-width: 779px) and (min-width: 580px) {
     position: relative;
-    width: 90%;
+    width: 95%;
     height: 90vh;
     overflow: scroll;
     margin: 0 auto;
@@ -557,11 +556,10 @@ const ProjectListWrap = styled.div`
       display: none;
     }
     .projectListContainer {
-      width: 520px;
+      width: 560px;
       margin: 0 auto;
       h4 {
         font-size: 28px;
-        color: #be0a26;
         display: flex;
         align-items: center;
         .projectBtn {
@@ -596,24 +594,26 @@ const ProjectListWrap = styled.div`
             margin: 0;
           }
           ul {
+            width: 100%;
+            text-align: start;
+            padding: 0;
             li {
               p {
                 img {
-                  width: 500px;
-                  margin: 0 auto;
+                  width: 100%;
+                  margin: 0 0 20px 0;
                 }
               }
             }
           }
           .roleContentWrap {
-            border-top: 1px solid lightgray;
-            padding-top: 40px;
-
+            width: 100%;
+            padding-top: 26px;
             .projectBox {
-              padding: 0;
-
+              padding: 0 0 10px 0;
+              border-bottom: 1px solid lightgray;
               li {
-                width: 500px;
+                width: 100%;
                 margin: 0 auto;
                 text-decoration: none;
                 list-style: none;
@@ -621,13 +621,14 @@ const ProjectListWrap = styled.div`
                 padding-top: 20px;
                 padding-bottom: 20px;
                 font-size: 14px;
-                video {
-                  max-width: 500px;
-                  margin: 0 auto;
-                  margin-bottom: 16px;
+                h5 {
+                  margin: 0;
+                }
+                img {
+                  width: 100%;
                 }
                 p {
-                  width: 90%;
+                  width: 100%;
                   margin: 0 auto;
                 }
                 .gif {
@@ -689,11 +690,10 @@ const ProjectListWrap = styled.div`
       display: none;
     }
     .projectListContainer {
-      width: 100%;
+      width: 95%;
       margin: 0 auto;
       h4 {
         font-size: 28px;
-        color: #be0a26;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -729,6 +729,8 @@ const ProjectListWrap = styled.div`
             margin: 0;
           }
           ul {
+            width: 100%;
+            padding: 0;
             li {
               p {
                 img {
@@ -739,12 +741,12 @@ const ProjectListWrap = styled.div`
             }
           }
           .roleContentWrap {
-            border-top: 1px solid lightgray;
-            padding-top: 40px;
-
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 20px;
             .projectBox {
-              padding: 0;
-
+              padding: 0 0 10px 0;
+              border-bottom: 1px solid lightgray;
               li {
                 width: 100%;
                 margin: 0 auto;
@@ -754,16 +756,18 @@ const ProjectListWrap = styled.div`
                 padding-top: 10px;
                 padding-bottom: 10px;
                 font-size: 14px;
-                video {
-                  max-width: 100%;
-                  margin: 0 auto;
-                  margin-bottom: 16px;
+                h5 {
+                  margin: 0;
                 }
                 p {
                   width: 100%;
                   margin: 0 auto;
                 }
+                img {
+                  width: 100%;
+                }
                 .gif {
+                  width: 100%;
                   display: block;
                   margin: 0 auto;
                 }
@@ -822,11 +826,10 @@ const ProjectListWrap = styled.div`
       display: none;
     }
     .projectListContainer {
-      width: 90%;
+      width: 95%;
       margin: 0 auto;
       h4 {
         font-size: 28px;
-        color: #be0a26;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -850,6 +853,7 @@ const ProjectListWrap = styled.div`
       .dataContent {
         padding: 0;
         li {
+          width: 100%;
           text-decoration: none;
           list-style: none;
           font-size: 14px;
@@ -862,6 +866,8 @@ const ProjectListWrap = styled.div`
             margin: 0;
           }
           ul {
+            width: 100%;
+            padding: 0;
             li {
               p {
                 img {
@@ -872,30 +878,31 @@ const ProjectListWrap = styled.div`
             }
           }
           .roleContentWrap {
-            border-top: 1px solid lightgray;
-            padding-top: 40px;
-
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 20px;
             .projectBox {
-              padding: 0;
-
+              padding: 0 0 10px 0;
+              border-bottom: 1px solid lightgray;
               li {
-                width: 100%;
                 text-decoration: none;
                 list-style: none;
                 line-height: 20px;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 font-size: 14px;
-                video {
-                  max-width: 100%;
-                  margin: 0 auto;
-                  margin-bottom: 16px;
+                h5 {
+                  margin: 0;
                 }
                 p {
                   width: 100%;
                   margin: 0 auto;
                 }
+                img {
+                  width: 100%;
+                }
                 .gif {
+                  width: 100%;
                   display: block;
                   margin: 0 auto;
                 }
