@@ -61,25 +61,54 @@ function ProjectList({ project, setPrjModal }) {
                 {list.thirdAbout.all}
               </li>
               <li>
-                <span>담당 : </span>
-                {list.thirdAbout.team}
+                <p>담당 : </p>
+                <p>{list.thirdAbout.team.projectFirst}</p>
+                <p>{list.thirdAbout.team.projectSecond}</p>
+                <p>{list.thirdAbout.team.projectThird}</p>
+                <p> {list.thirdAbout.team.projectFourth}</p>
+              </li>
+              <li>
+                <h5> {list.thirdAbout.treeTitle}</h5>
+                <ul>
+                  {list.thirdAbout.treeContent.map((tree) => {
+                    return (
+                      <li key={tree.id}>
+                        <p>
+                          <img src={tree.src} alt="프로젝트구조" />
+                        </p>
+                        <p>{tree.about}</p>
+                      </li>
+                    );
+                  })}
+                </ul>
               </li>
               <li>
                 <div className="roleContentWrap">
                   {list.thirdAbout.roleContent.map((item) => {
                     return (
-                      <ul className="projectBox">
-                        <li className="projectBoxTitle">
-                          <strong>{item.role}</strong>
+                      <ul className="projectBox" key={item.id}>
+                        <li>
+                          <h5>{item.role}</h5>
                           {item.work}
                         </li>
-                        <li className="contentBoxWrap">
-                          <video
+                        {/* <li>
+                         <video
                             controls
                             src={item.url}
                             type="video/mp4"
-                          ></video>
-                          <p className="projectBoxContent">{item.text}</p>
+                          ></video> 
+                        </li>*/}
+                        <li>
+                          <img src={item.codeSrc} alt="projectImg" />
+                        </li>
+                        <li>
+                          <p>{item.explain.first}</p>
+                          <p>{item.explain.second}</p>
+                          <p>{item.explain.third}</p>
+                          <p>{item.explain.fourth}</p>
+                        </li>
+                        <li>
+                          <img className="gif" src={item.gif} alt="시현영상" />
                         </li>
                       </ul>
                     );
@@ -166,22 +195,48 @@ const ProjectListWrap = styled.div`
           h5 {
             font-size: 20px;
           }
+          p {
+            margin: 0;
+          }
+          ul {
+            li {
+              p {
+                img {
+                  width: 800px;
+                  margin: 10px 0 20px 0;
+                }
+              }
+            }
+          }
           .roleContentWrap {
-            border-top: 1px solid lightgray;
             padding-top: 40px;
             .projectBox {
-              padding: 0;
+              padding: 0 0 20px 0;
+              border-bottom: 1px solid lightgray;
               li {
+                width: 800px;
+                margin: 0 auto;
                 text-decoration: none;
                 list-style: none;
                 line-height: 26px;
                 padding-top: 20px;
                 padding-bottom: 20px;
+                h5 {
+                  margin: 0;
+                }
                 video {
                   max-width: 580px;
                   min-width: 300px;
                   margin: 0 auto;
                   margin-bottom: 16px;
+                }
+                p {
+                  width: 90%;
+                  margin: 0 auto;
+                }
+                .gif {
+                  display: block;
+                  margin: 0 auto;
                 }
               }
               .contentBoxWrap {
@@ -273,6 +328,19 @@ const ProjectListWrap = styled.div`
           h5 {
             font-size: 16px;
           }
+          p {
+            margin: 0;
+          }
+          ul {
+            li {
+              p {
+                img {
+                  width: 600px;
+                  margin: 0 auto;
+                }
+              }
+            }
+          }
           .roleContentWrap {
             border-top: 1px solid lightgray;
             padding-top: 40px;
@@ -281,6 +349,8 @@ const ProjectListWrap = styled.div`
               padding: 0;
 
               li {
+                width: 600px;
+                margin: 0 auto;
                 text-decoration: none;
                 list-style: none;
                 line-height: 20px;
@@ -291,6 +361,14 @@ const ProjectListWrap = styled.div`
                   max-width: 500px;
                   margin: 0 auto;
                   margin-bottom: 16px;
+                }
+                p {
+                  width: 90%;
+                  margin: 0 auto;
+                }
+                .gif {
+                  display: block;
+                  margin: 0 auto;
                 }
               }
               .contentBoxWrap {
@@ -382,6 +460,19 @@ const ProjectListWrap = styled.div`
           h5 {
             font-size: 16px;
           }
+          p {
+            margin: 0;
+          }
+          ul {
+            li {
+              p {
+                img {
+                  width: 500px;
+                  margin: 0 auto;
+                }
+              }
+            }
+          }
           .roleContentWrap {
             border-top: 1px solid lightgray;
             padding-top: 40px;
@@ -390,6 +481,8 @@ const ProjectListWrap = styled.div`
               padding: 0;
 
               li {
+                width: 500px;
+                margin: 0 auto;
                 text-decoration: none;
                 list-style: none;
                 line-height: 20px;
@@ -400,6 +493,14 @@ const ProjectListWrap = styled.div`
                   max-width: 500px;
                   margin: 0 auto;
                   margin-bottom: 16px;
+                }
+                p {
+                  width: 90%;
+                  margin: 0 auto;
+                }
+                .gif {
+                  display: block;
+                  margin: 0 auto;
                 }
               }
               .contentBoxWrap {
@@ -491,6 +592,19 @@ const ProjectListWrap = styled.div`
           h5 {
             font-size: 16px;
           }
+          p {
+            margin: 0;
+          }
+          ul {
+            li {
+              p {
+                img {
+                  width: 500px;
+                  margin: 0 auto;
+                }
+              }
+            }
+          }
           .roleContentWrap {
             border-top: 1px solid lightgray;
             padding-top: 40px;
@@ -499,6 +613,8 @@ const ProjectListWrap = styled.div`
               padding: 0;
 
               li {
+                width: 500px;
+                margin: 0 auto;
                 text-decoration: none;
                 list-style: none;
                 line-height: 20px;
@@ -509,6 +625,14 @@ const ProjectListWrap = styled.div`
                   max-width: 500px;
                   margin: 0 auto;
                   margin-bottom: 16px;
+                }
+                p {
+                  width: 90%;
+                  margin: 0 auto;
+                }
+                .gif {
+                  display: block;
+                  margin: 0 auto;
                 }
               }
               .contentBoxWrap {
@@ -601,6 +725,19 @@ const ProjectListWrap = styled.div`
           h5 {
             font-size: 16px;
           }
+          p {
+            margin: 0;
+          }
+          ul {
+            li {
+              p {
+                img {
+                  width: 100%;
+                  margin: 0 auto;
+                }
+              }
+            }
+          }
           .roleContentWrap {
             border-top: 1px solid lightgray;
             padding-top: 40px;
@@ -609,6 +746,8 @@ const ProjectListWrap = styled.div`
               padding: 0;
 
               li {
+                width: 100%;
+                margin: 0 auto;
                 text-decoration: none;
                 list-style: none;
                 line-height: 20px;
@@ -619,6 +758,14 @@ const ProjectListWrap = styled.div`
                   max-width: 100%;
                   margin: 0 auto;
                   margin-bottom: 16px;
+                }
+                p {
+                  width: 100%;
+                  margin: 0 auto;
+                }
+                .gif {
+                  display: block;
+                  margin: 0 auto;
                 }
               }
               .contentBoxWrap {
@@ -711,6 +858,19 @@ const ProjectListWrap = styled.div`
           h5 {
             font-size: 16px;
           }
+          p {
+            margin: 0;
+          }
+          ul {
+            li {
+              p {
+                img {
+                  width: 100%;
+                  margin: 0 auto;
+                }
+              }
+            }
+          }
           .roleContentWrap {
             border-top: 1px solid lightgray;
             padding-top: 40px;
@@ -719,6 +879,7 @@ const ProjectListWrap = styled.div`
               padding: 0;
 
               li {
+                width: 100%;
                 text-decoration: none;
                 list-style: none;
                 line-height: 20px;
@@ -729,6 +890,14 @@ const ProjectListWrap = styled.div`
                   max-width: 100%;
                   margin: 0 auto;
                   margin-bottom: 16px;
+                }
+                p {
+                  width: 100%;
+                  margin: 0 auto;
+                }
+                .gif {
+                  display: block;
+                  margin: 0 auto;
                 }
               }
               .contentBoxWrap {

@@ -21,59 +21,190 @@
           "thirdTitle": "프로젝트 구현기능",
           "thirdAbout": {
             "all": "메인페이지, 영화페이지, 예약페이지, 로그인, 회원가입, 아이디/비밀번호 찾기, 상세페이지",
-            "team": "Main-page 섹션별 컴포넌트화 작업",
-            "roleContent": [
+            "team": {
+              "projectFirst": "[UI] : Navbar, user의 이동경로 UI구현, Subnav Tab구현, 로그인 (modal window), 회원가입 step별 component, 아이디/비밀번호 찾기",
+              "projectSecond": "[Login] : api를 호출하여 로그인구현, token저장",
+              "projectThird": "[Signup] : 휴대폰 인증후 회원가입.",
+              "projectFourth": "[User Id & Password find] : user의 정보를 입력하여 DB로 보내면 DB에서 확인후 보낸 아이디정보 또는 생성된 임시비밀번호를 alert메세지로 띄운다."
+            },
+            "treeTitle": "프로젝트 구조",
+            "treeContent": [
               {
                 "id": 0,
-                "role": "UI ",
-                "work": "Header별 UI 및 기능: ",
-                "url": "https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4",
-                "text": "Nav Link를 이용한 페이지별 링크 연결, user의 location정보 UI구현 및 링크 연결, Subnav bar Tab구현 (클릭시 Drop-down메뉴 리스트 구현 close버튼으로 닫기) , 카테고리별 링크 연결, 로그인 pop-up 모달 구현, 회원가입 컴포넌트 별 아이디/비밀번호 찾기 레이아웃 및 스타일 구현",
-                "codeSrc": "",
-                "explain": ""
+                "src": "https://velog.velcdn.com/images/miogy/post/2d8528f8-98f2-4f7f-add8-5be5f7656417/image.png",
+                "about": "[component] : Header js에 탭구현 함수와 Navbar, location, Login, Signup등 모든 컴포넌트가 들어있다. category는 left / right를 나눠서 작업하였다."
               },
               {
                 "id": 1,
-                "role": "Login",
-                "work": "로그인/로그아웃 : ",
-                "url": "https://user-images.githubusercontent.com/99234582/199281315-56606e3c-ccbd-46be-948a-030aa6a4201a.mp4",
-                "text": "fetch를 이용하여 post로 user정보 보내기, DB의 user 정보 데이터를 비교 후 token받아서 localstorage에 담기, 로그아웃을 클릭하면 이벤트핸들러를 이용하여 localstorage에 token을 지우기"
+                "src": "https://velog.velcdn.com/images/miogy/post/df2bbed8-5aa9-4f3e-855c-e850daee763f/image.png",
+                "about": "[pages] : user의 정보를 찾는 페이지에서는 아이디 찾기와 비밀번호찾기의 경로를 Router에서 지정해주고 각 컴포넌트 내에서 onChang로 e.target.value를 받는 함수와 api호출하고 POST메서드로 DB에 보내면 해당 정보가 있는 user의 경우 아이디를 반환하거나 임시비밀번호를 생성하여 반환하는 방법으로 구현하였다."
               },
               {
                 "id": 2,
-                "role": "Signup",
-                "work": "step.01 휴대폰 인증 : ",
-                "url": "https://user-images.githubusercontent.com/99234582/196132040-c2019575-20fd-40c3-a423-99737cb4cb95.mp4",
-                "text": "fetch함수를 이용하여 api를 호출하고 POST로 user의 정보를 보낸다. 번호를 보내면 인증번호를 입력하여 DB로 다시 보낼 toggle을 생성한다. 문자로 받은 인증번호를 담아놓은 user의 휴대폰 번호와 같이 보내준다."
+                "src": "https://velog.velcdn.com/images/miogy/post/413f505a-6303-4968-a67b-006cb8117506/image.png",
+                "about": "[pages] : singup js를 메인으로 step별 카테고리와 컴포넌트로 구성되어있다.컴포넌트는 Router에서 경로를 지정하고 step별 인증에 성공해야 경로가 이동되며 다음 step컴포넌트가 구현되게 작업하였다."
+              }
+            ],
+            "roleContent": [
+              {
+                "id": 0,
+                "role": "UI",
+                "work": "state를 이용한 모달과 탭구현 & hover시 메뉴구현",
+                "url": "https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4",
+                "text": "",
+                "codeSrc": "https://user-images.githubusercontent.com/99234582/200870950-d6c3705c-9d92-4744-b9f4-b22f98eda241.png",
+                "explain": {
+                  "first": "prev => !prev : boolean 값 반대를 넣는단 의미",
+                  "second": "탭으로 구현하고자 하는 컴포넌트를 state로 관리하고 false를 초기값으로 지정한다.",
+                  "third": "modal window 또는 drop-down을 구현하기위해 클릭해야하는 버튼이 있다.",
+                  "fourth": "버튼에 onClick이벤트를 이용하여 위의 tabHandler함수를 담고 삼항연산자를 사용하여 이벤트 발생시 불리언값으로 open 또는 close를 구현한다."
+                },
+                "final": "시현 영상",
+                "gif": "https://velog.velcdn.com/images/miogy/post/5cf139b1-1d7c-4363-8e67-0be597f2744a/image.gif"
+              },
+              {
+                "id": 1,
+                "role": "UI",
+                "work": "useLocation()",
+                "url": "https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4",
+                "text": "location.pathname을 이용하여 location데이터 반환",
+                "codeSrc": "https://user-images.githubusercontent.com/99234582/200879616-ffc51af2-2d21-499c-b8d2-48adbd999aa7.png",
+                "explain": {
+                  "first": "props로 받은 location.pathname을 이용하여 데이터로 만든 location배열안에 경로값과 삼항연자로 비교후 반환한다.",
+                  "second": "삼항연산자를 이용하여 비교하는 조건에 id값은 물론 입력값을 onChange로 받아서 e.target.value와 다른 키값의 비교도 가능한데 경로로 비교도 가능하다! 어떤 조건을 갖춰 로직을 짤지 잘 생각해서 계획해야겠다.",
+                  "third": "",
+                  "fourth": ""
+                },
+                "final": "시현 영상",
+                "gif": "https://velog.velcdn.com/images/miogy/post/902d6ae5-1ba1-4279-b5d2-28355ff9507b/image.gif"
+              },
+              {
+                "id": 2,
+                "role": "로그인",
+                "work": "로그인 인증후 token저장",
+                "url": "https://user-images.githubusercontent.com/99234582/199281315-56606e3c-ccbd-46be-948a-030aa6a4201a.mp4",
+                "text": "api명세서를 확인하여 필요한 body값과 주소를 확인하고 message로 조건을 처리하여 반환 하였다.",
+                "codeSrc": "https://user-images.githubusercontent.com/99234582/200881053-ee6d5a5d-d15d-4960-b8b3-2ae2b45eff4d.png",
+                "explain": {
+                  "first": "fetch함수를 이용하여 POST메서드로 user의 정보를 DB에 보낸후 token을 localStorage에 저장. 로그아웃시 token을 localStorage를 이용하여 clear.",
+                  "second": "로그아웃은 따로 컴포넌트를 생성하지 않고 Header js에서 localStorage.removeItem를 담은 함수를 만들고 로그인후 바뀐 로그아웃 태그에 onClick이벤트에 담아 실행하였다.",
+                  "third": "",
+                  "fourth": ""
+                },
+                "final": "시현 영상",
+                "gif": "https://velog.velcdn.com/images/miogy/post/33dcd34a-edce-49ed-88fa-a3701c9ddcb4/image.gif"
               },
               {
                 "id": 3,
-                "role": "Signup",
-                "work": "step.02 약관 동의",
-                "url": "https://user-images.githubusercontent.com/99234582/196134181-fc848814-cc87-4dfb-8c40-c3bab8f11fad.mp4",
-                "text": "체크박스를 이용하여 필수체크선택시 다음 step으로 넘어간다. 전체 선택시 체크박스 전체 선택 또는 하나 해제시 전체 선택 해제"
+                "role": "아이디 찾기 / 비밀번호 찾기",
+                "work": "",
+                "url": "https://user-images.githubusercontent.com/99234582/196132040-c2019575-20fd-40c3-a423-99737cb4cb95.mp4",
+                "text": "fetch와 POST메서드로 user의 정보를 입력해서 DB로 보내면 DB에서 확인하여 해당 user의 id를 받는다. 또는 랜덤으로 비밀번호를 생성후 새로운 임시비밀번호를 받는다.",
+                "codeSrc": "https://user-images.githubusercontent.com/99234582/200881714-afeb14aa-9d34-44bd-8e31-876c89584022.png",
+                "explain": {
+                  "first": "useRef()를 이용하여 입력값의 e.target.value를 body에 담아 DB에 보내준다.",
+                  "second": "body를 확인하여 아이디찾기와 비밀번호 찾기에서 DB에 보내주면 alert메세지로 아이디 및 임시 비밀번호를 받을 수 있다.",
+                  "third": "",
+                  "fourth": ""
+                },
+                "final": "시현 영상",
+                "gif": "https://velog.velcdn.com/images/miogy/post/cccb1706-57da-4c81-b916-0a6db0f689d0/image.gif"
               },
               {
                 "id": 4,
-                "role": "Signup",
-                "work": "step.03 정보 입력후 가입완료",
-
-                "url": "https://user-images.githubusercontent.com/99234582/196135319-8d243855-88f8-4304-98de-a4ff29592f6b.mp4",
-                "content": "window.localstorage를 이용하여 step01에서 기재한 user의 정보를 해당 입력칸에 담는다. 아이디를 DB에 보내어 user데이터에서 확인후 중복체크를 해준다. 비밀번호와 이메일을 입력시 유효성 검사를 하고 문제가 없을 시 아래 체크박스중 하나를 선택해야 가입이 완료된다. 가입완료 버튼을 클릭하면 메인페이지로 이동한다."
+                "role": "[회원가입] step01 휴대폰인증",
+                "work": "step별로 컴포넌트를 나눈후 조건을 처리하고 성공시 다음 step으로 이동",
+                "url": "https://user-images.githubusercontent.com/99234582/196134181-fc848814-cc87-4dfb-8c40-c3bab8f11fad.mp4",
+                "text": "인증번호를 보내는 동시에 인증번호 확인 toggle생성, 휴대폰으로 발송된 번호를 입력후 DB에 보내면 확인후 다음페이지로 이동된다. user가 입력한 기본 정보 값은 localStorage로 담아 정보입력에 해당하는 step에서 넣어준다.",
+                "codeSrc": "https://user-images.githubusercontent.com/99234582/200882760-5f5ad78f-21f2-4686-9952-74a000b0d04a.png",
+                "explain": {
+                  "first": "localStorage.setItem('token', res.data.jwt) : 휴대폰번호를 보내면 인증 토큰과 함께 휴대폰 번호로 인증번호를 발송한다.",
+                  "second": "인증 번호를 보낼때 한번더 휴대폰인증시 입력한 user의 정보를 같이 보내주어야한다.",
+                  "third": "또한 window.localStorage.setItem을 이용하여 현재 step에서 입력한 user의 정보를 담아 정보입력 step에서 user의 정보란에 넣어준다.",
+                  "fourth": ""
+                },
+                "final": "시현 영상",
+                "gif": "https://velog.velcdn.com/images/miogy/post/dfc2027a-0fd0-4b39-b7c1-926edd8add2c/image.gif"
               },
               {
                 "id": 5,
-                "role": "User find & Password find",
-                "work": "아이디 찾기 및 임시비밀번호 받기",
-                "url": "https://user-images.githubusercontent.com/99234582/196136005-61c8834b-b045-4915-8bad-77875ba85255.mp4",
-                "text": "fetch함수를 이용하여 POST메서드로 user정보를 보낸후 DB에서 비교하여 아이디 또는 임시 비밀번호를 받는다."
+                "role": "[회원가입] step02 약관동의",
+                "work": "전체 체크박스를 선택시 전체 선택 , 체크박스 해제시 전체 체크박스 해제",
+                "url": "https://user-images.githubusercontent.com/99234582/196135319-8d243855-88f8-4304-98de-a4ff29592f6b.mp4",
+                "text": "",
+                "codeSrc": "https://user-images.githubusercontent.com/99234582/200883797-a0fd871c-7b50-42a5-bc3d-4c4252e2f73e.png",
+                "explain": {
+                  "first": "전체 체크박스선택인 input에 onChange이벤트를 이용하여 위의 함수를 실행하면 checked에 담긴 includes('check')를 확인하고 true로 변경됨.",
+                  "second": "각 체크박스에 해당하는 input택그에 OnClick이벤트를 적용하여 위의 함수를 담아 checkAll함수가 실행되게 한다.",
+                  "third": "필수 체크박스 선택시 또는 위에 전체 체크박스가 선택이 되면 state로 담은 nextStep이 'nextBtn'으로 변경된다. 이를 조건으로 버튼활성화를 실행하여 다음 페이지로 이동한다.",
+                  "fourth": ""
+                },
+                "final": "시현 영상",
+                "gif": "https://velog.velcdn.com/images/miogy/post/93a46b21-5189-4460-ad62-dd48102f03cc/image.gif"
               },
               {
                 "id": 6,
-                "role": "코드 및 에러",
-                "work": "Blog로 가시면 더 볼수 있습니다.",
+                "role": "[회원가입] step03. 정보입력",
+                "work": "window.localStorage.getItem으로 user의 정보 불러오기.",
+                "url": "https://user-images.githubusercontent.com/99234582/196136005-61c8834b-b045-4915-8bad-77875ba85255.mp4",
+                "text": "휴대폰인증 절차에 입력된 user정보를 window.localStorage.setItem를 이용하여 저장후 해당 절차 페이지에 getItem으로 불러온다.",
+                "codeSrc": "https://user-images.githubusercontent.com/99234582/200884906-94d7c174-3e90-45f7-87c3-4734899fb610.png",
+                "explain": {
+                  "first": "정보를 입력하는 input태그는 useRef로 value값을 받고 POST메서드로 DB에 보내주는 body에 넣어준다.",
+                  "second": "아이디 중복 : POST메서드를 이용하여 id값을 DB로 보내준후 정보가 있으면 에러를 보낸다.",
+                  "third": "중복체크 완료 후 비밀번호와 이메일의 유효성 검사를 거쳐 회원가입 완료",
+                  "fourth": ""
+                },
+                "final": "시현 영상",
+                "gif": "https://velog.velcdn.com/images/miogy/post/4b10ac78-aed1-4e6c-8669-2e7875781072/image.gif"
+              },
+              {
+                "id": 7,
+                "role": "재미있었던 기능",
+                "work": "1. location.pathname을 이용한 카테고리 UI & Tab구현",
                 "url": "https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4",
-                "text": "프로젝트 타이틀 옆 Project Blog버튼으로 해당 블로그를 방문하시면 프로젝트시 코드나 에러관련 리뷰를 더 자세히 볼 수 있습니다."
+                "text": "",
+                "codeSrc": "https://user-images.githubusercontent.com/99234582/200885846-9a5160fd-b158-46ca-892b-d9549d43d04b.png",
+                "explain": {
+                  "first": "header의 navbar부터 탭메뉴 모달과 카테고리까지 클릭시 콘텐츠가 구현되는 기능을 여러개 작업하게 되었는데 이 프로젝트를 하면서 location.pathname을 이용하여 데이터내에 구성된 url과 비교후 콘텐츠가 구현되는 기능을 해보았다.",
+                  "second": "state로 담아서 구현하는 이전 작업과는 달리 좀 더 사고가 트일수 있었던 작업이였다.",
+                  "third": "",
+                  "fourth": ""
+                },
+                "final": "시현 영상",
+                "gif": "https://velog.velcdn.com/images/miogy/post/4b10ac78-aed1-4e6c-8669-2e7875781072/image.gif"
+              },
+              {
+                "id": 8,
+                "role": "재미있었던 기능",
+                "work": "2. 휴대폰 인증",
+                "url": "https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4",
+                "text": "",
+                "codeSrc": "https://user-images.githubusercontent.com/99234582/200882760-5f5ad78f-21f2-4686-9952-74a000b0d04a.png",
+                "explain": {
+                  "first": "BE에서 인증 api를 준비해주고 FE는 POST메서드로 user의 정보만 보내주면 입력한 휴대폰으로 인증번호가 오는게 너무 신기했다.",
+                  "second": "인증 구현을 하면서 user의 정보를 재입력하는 번거러움을 없애기 위해 방법을 모색하다 window.localStorage.setItem()으로 user의 정보를 잠시 담아 놓고 window.localStorage.getItem으로 불러와 사용하는 법을 알게 되었다.",
+                  "third": "",
+                  "fourth": ""
+                },
+                "final": "시현 영상",
+                "gif": "https://velog.velcdn.com/images/miogy/post/dfc2027a-0fd0-4b39-b7c1-926edd8add2c/image.gif"
+              },
+              {
+                "id": 9,
+                "role": "프로젝트 진행시 문제되었던 부분",
+                "work": "로그인 인증은 되는데 token사용불가",
+                "url": "https://user-images.githubusercontent.com/99234582/196128440-a0b60075-3c1b-4b56-a224-b5e4274c9fd0.mp4",
+                "text": "console에서 localStorage를 확인해본결과 객체로 나온다... 바로 명세서를 확인해보았다. 1차 프로젝트에서 보았던 명세서에서는 token을 문자형으로 받은것과 달리 2차 프로젝트에서는 객체형으로 id와 token이 담겨있었다.",
+                "codeSrc": "https://user-images.githubusercontent.com/99234582/200881053-ee6d5a5d-d15d-4960-b8b3-2ae2b45eff4d.png",
+                "explain": {
+                  "first": "객체인 token을 사용하는 방법 : localStorage.setItem('token', JSON.stringify(result.token))",
+                  "second": "웹 스토리지를 사용할 때 주의해야 할 부분, 오직 문자형(string) 데이터 타입만 지원한다는 것이다. ",
+                  "third": "이러한 성질 때문에 객체형인 token을 받을때에는 JSON 형태로 데이터를 읽어야함으로 JSON.stringify를 사용하여 불러온 데이터 result.token으로 지정해준다.",
+                  "fourth": ""
+                },
+                "final": "시현 영상",
+                "gif": "https://velog.velcdn.com/images/miogy/post/33dcd34a-edce-49ed-88fa-a3701c9ddcb4/image.gif"
               }
             ]
           }
