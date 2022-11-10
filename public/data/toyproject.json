@@ -102,7 +102,7 @@
       "projectTitle": "LULULAB",
       "imgSrc": "https://velog.velcdn.com/images/miogy/post/de06ef02-9885-49d9-b5dd-2fc15944fc46/image.png",
       "readme": "https://github.com/miogy/Pre-Onboarding_LULULAB",
-      "blog": "",
+      "blog": "https://velog.io/@miogy/LULULAB",
       "about": " 예약시스템",
       "introduce": "룰루랩의 기업과제인 병원 예약 시스템을 개발하였습니다. 구현사항은 예약등록, 예약자명 또는 예약자의 휴대폰 번호로 조회하기, 휴대폰 번호를 입력하여 예약삭제를 구현하였습니다.",
       "site": "https://miogy.github.io/Pre-Onboarding_LULULAB/",

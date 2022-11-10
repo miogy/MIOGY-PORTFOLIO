@@ -443,7 +443,8 @@ const StyledProject = styled.div`
               height: 30px;
               position: absolute;
               top: 50%;
-              left: 35%;
+              left: 50%;
+              transform: translate(-50%, -50%);
               border: 1px solid lightgray;
               border-radius: 5px;
               background-color: #fff;
@@ -476,10 +477,12 @@ const StyledProject = styled.div`
             .cardBtn {
               width: 54px;
               height: 24px;
+              padding: 0;
               border: 1px solid lightgray;
               background-color: #fff;
               font-size: 11px;
               color: #333;
+              text-align: center;
               cursor: pointer;
               &:nth-child(1) {
                 border-right: 0;
