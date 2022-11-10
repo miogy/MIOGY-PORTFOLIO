@@ -3,6 +3,8 @@
     {
       "id": 0,
       "contentTitle": "STARBOX",
+      "readme": "https://github.com/miogy/2ND-PROJECT_STARBOX",
+      "blog": "https://velog.io/@miogy/JUSTCODE-2nd-Project-STARBOX",
       "data": [
         {
           "contentId": 0,
@@ -16,8 +18,7 @@
           "library": "sass, styled-component",
           "CommunityTools": "Trello, Notion, Zep, Zoom, Slack",
           "VersionControlTool": "Git",
-          "readme": "https://github.com/miogy/2ND-PROJECT_STARBOX",
-          "blog": "https://velog.io/@miogy/JUSTCODE-2nd-Project-STARBOX",
+
           "thirdTitle": "프로젝트 구현기능",
           "thirdAbout": {
             "all": "메인페이지, 영화페이지, 예약페이지, 로그인, 회원가입, 아이디/비밀번호 찾기, 상세페이지",
@@ -214,6 +215,8 @@
     {
       "id": 1,
       "contentTitle": "ALE6IX",
+      "readme": "https://github.com/miogy/1ST-PROJECT_ALE6IX",
+      "blog": "https://velog.io/@miogy/JUSTCODE-1st-Project-ALE6IX",
       "data": [
         {
           "contentId": 0,
@@ -227,8 +230,7 @@
           "library": "sass, react-modal, react-dom, react-icons,react-paginate, react-router-dom",
           "CommunityTools": " Notion, Zep, Zoom, Slack",
           "VersionControlTool": "Git",
-          "readme": "https://github.com/miogy/1ST-PROJECT_ALE6IX",
-          "blog": "https://velog.io/@miogy/JUSTCODE-1st-Project-ALE6IX",
+
           "thirdTitle": "프로젝트 구현기능",
           "thirdAbout": {
             "all": "메인페이지, 제품 페이지, 상세페이지, 로그인, 회원가입, 장바구니, 검색 페이지",
