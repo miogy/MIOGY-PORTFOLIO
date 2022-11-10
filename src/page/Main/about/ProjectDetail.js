@@ -198,8 +198,12 @@ const ProjectListWrap = styled.div`
             margin: 0;
           }
           ul {
+            width: 100%;
+            text-align: start;
+            padding: 0;
             li {
               p {
+                margin: 0;
                 img {
                   width: 800px;
                   margin: 10px 0 20px 0;
