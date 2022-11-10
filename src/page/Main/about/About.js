@@ -13,8 +13,8 @@ function About({ projectData }) {
 
   const categoryTab = {
     0: <TechStack />,
-    1: <Workexperience />,
-    2: <DesignSkill />,
+    1: <DesignSkill />,
+    2: <Workexperience />,
     3: <ProjectCard />,
     4: <ToyProjectCard projectData={projectData} />,
   };
@@ -137,7 +137,7 @@ const AboutWrap = styled.div`
         color: #999;
       }
       .contentContainer {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
       }
     }

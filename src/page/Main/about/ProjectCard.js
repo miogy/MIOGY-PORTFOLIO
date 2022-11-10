@@ -322,6 +322,7 @@ const StyledProject = styled.div`
   @media screen and (max-width: 979px) and (min-width: 580px) {
     width: 100%;
     padding-top: 40px;
+    padding-bottom: 60px;
     display: flex;
     justify-content: flex-start;
     overflow: scroll;
@@ -330,6 +331,7 @@ const StyledProject = styled.div`
       display: none;
     }
     .projectWrap {
+      width: 100%;
       padding: 0 10px 0 10px;
       margin-right: 30px;
       border: 1px solid lightgray;
@@ -345,7 +347,7 @@ const StyledProject = styled.div`
             position: relative;
             .imgContent {
               width: 440px;
-              height: 240px;
+              height: 250px;
             }
             .projectPage {
               width: 160px;
@@ -409,17 +411,19 @@ const StyledProject = styled.div`
   }
   @media screen and (max-width: 579px) and (min-width: 230px) {
     width: 100%;
-    padding-top: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
-    justify-content: flex-start;
-    overflow: scroll;
+    justify-content: center;
+    flex-wrap: wrap;
     cursor: pointer;
     ::-webkit-scrollbar {
       display: none;
     }
     .projectWrap {
+      width: 100%;
       padding: 0 10px 0 10px;
-      margin-right: 30px;
+      margin-bottom: 20px;
       border: 1px solid lightgray;
       border-radius: 15px;
       .cardWrap {
@@ -432,8 +436,7 @@ const StyledProject = styled.div`
           .projectImg {
             position: relative;
             .imgContent {
-              width: 300px;
-              height: 170px;
+              width: 100%;
             }
             .projectPage {
               width: 160px;

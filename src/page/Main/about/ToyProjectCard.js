@@ -205,7 +205,7 @@ const StyledToyCard = styled.div`
     }
   }
   @media screen and (max-width: 979px) and (min-width: 580px) {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 60px;
     display: flex;
@@ -218,9 +218,8 @@ const StyledToyCard = styled.div`
     }
     .ToyPrjContainer {
       position: relative;
-      width: 280px;
-      margin-right: 30px;
-      /* border: 1px solid lightgray; */
+      width: 50%;
+      margin: 0 30px 30px 0;
       .cardContainer {
         padding: 10px;
         margin: 0 auto;
@@ -250,34 +249,7 @@ const StyledToyCard = styled.div`
             }
           }
           .prjAbout {
-            width: 80%;
-            height: 0px;
-            margin: 0 auto;
-            font-size: 14px;
-            line-height: 16px;
-            color: #333;
-            overflow: scroll;
-            ::-webkit-scrollbar {
-              display: none;
-            }
-            strong {
-              width: 100%;
-              display: block;
-              margin-bottom: 6px;
-            }
-            .introduce {
-              line-height: 22px;
-            }
-            button {
-              font-size: 12px;
-              margin-left: 6px;
-              border: 1px solid lightgray;
-              background-color: #fff;
-              &:hover {
-                background-color: lightgray;
-                color: #fff;
-              }
-            }
+            display: none;
           }
           .toyPrjContents {
             width: 100%;
@@ -285,10 +257,10 @@ const StyledToyCard = styled.div`
             justify-content: space-around;
             align-items: center;
             .toyPrjBtn {
-              width: 50px;
+              width: 40%;
               margin: 0 5px 0 5px;
               padding: 5px;
-              font-size: 12px;
+              font-size: 16px;
               border: 1px solid lightgray;
               border-radius: 5px;
               &:hover {
@@ -302,7 +274,7 @@ const StyledToyCard = styled.div`
         .toyPrjLink {
           width: 100%;
           margin: 0 auto;
-          font-size: 14px;
+          font-size: 16px;
           margin-bottom: 10px;
           .icon {
             margin-right: 6px;
@@ -321,24 +293,22 @@ const StyledToyCard = styled.div`
     }
   }
   @media screen and (max-width: 579px) and (min-width: 230px) {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 60px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    overflow: scroll;
+    justify-content: center;
+    flex-wrap: wrap;
     cursor: pointer;
     ::-webkit-scrollbar {
       display: none;
     }
     .ToyPrjContainer {
       position: relative;
-      width: 280px;
-      margin-right: 30px;
-      /* border: 1px solid lightgray; */
+      width: 100%;
+      margin-bottom: 30px;
+      border-bottom: 1px solid lightgray;
       .cardContainer {
-        padding: 10px;
         margin: 0 auto;
         .toyPrjImg {
           img {
@@ -348,13 +318,12 @@ const StyledToyCard = styled.div`
         .toyCardContents {
           width: 100%;
           margin: 0 auto;
-
           .toyPrjTop {
+            margin: 3px;
             display: flex;
             justify-content: space-around;
             align-items: center;
             padding-bottom: 10px;
-            border-bottom: 1px solid lightgray;
             .title {
               font-size: 18px;
               font-weight: 600;
@@ -366,45 +335,20 @@ const StyledToyCard = styled.div`
             }
           }
           .prjAbout {
-            width: 80%;
-            height: 0px;
-            margin: 0 auto;
-            font-size: 14px;
-            line-height: 16px;
-            color: #333;
-            overflow: scroll;
-            ::-webkit-scrollbar {
-              display: none;
-            }
-            strong {
-              width: 100%;
-              display: block;
-              margin-bottom: 6px;
-            }
-            .introduce {
-              line-height: 22px;
-            }
-            button {
-              font-size: 12px;
-              margin-left: 6px;
-              border: 1px solid lightgray;
-              background-color: #fff;
-              &:hover {
-                background-color: lightgray;
-                color: #fff;
-              }
-            }
+            display: none;
           }
           .toyPrjContents {
             width: 100%;
+            margin: 0;
+            margin-bottom: 10px;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             .toyPrjBtn {
-              width: 50px;
+              width: 30%;
               margin: 0 5px 0 5px;
               padding: 5px;
-              font-size: 12px;
+              font-size: 14px;
               border: 1px solid lightgray;
               border-radius: 5px;
               &:hover {
