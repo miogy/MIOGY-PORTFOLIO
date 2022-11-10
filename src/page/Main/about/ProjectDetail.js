@@ -62,10 +62,10 @@ function ProjectList({ project, setPrjModal }) {
               </li>
               <li>
                 <p>담당 : </p>
-                <p>{list.thirdAbout.team.projectFirst}</p>
+                {/* <p>{list.thirdAbout.team.projectFirst}</p>
                 <p>{list.thirdAbout.team.projectSecond}</p>
                 <p>{list.thirdAbout.team.projectThird}</p>
-                <p> {list.thirdAbout.team.projectFourth}</p>
+                <p> {list.thirdAbout.team.projectFourth}</p> */}
               </li>
               <li>
                 <h5> {list.thirdAbout.treeTitle}</h5>
@@ -222,6 +222,9 @@ const ProjectListWrap = styled.div`
                 padding-bottom: 20px;
                 h5 {
                   margin: 0;
+                }
+                img {
+                  width: 800px;
                 }
                 p {
                   width: 90%;
