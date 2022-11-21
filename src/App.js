@@ -4,7 +4,6 @@ import Footer from "./component/Footer";
 import styled from "styled-components";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Magazine from "./page/Magazine";
 import Info from "./page/AboutPage/Info";
 import Developer from "./page/DeveloperPage/Developer";
 import Design from "./page/DesignPage/Design";
@@ -20,6 +19,7 @@ function App() {
         setProjectData(data.toyproject);
       });
   }, []);
+
   return (
     <StyledApp>
       <HashRouter className="routerWrap">
