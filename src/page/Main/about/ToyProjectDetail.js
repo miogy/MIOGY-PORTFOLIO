@@ -88,6 +88,7 @@ export default ToyProjectDetail;
 const StyledToyPrj = styled.div`
   @media screen and (min-width: 1100px) {
     width: 100%;
+    padding-top: 100px;
     .toyPrjWrap {
       position: relative;
       width: 980px;
@@ -100,7 +101,7 @@ const StyledToyPrj = styled.div`
       }
       button {
         position: fixed;
-        top: 70px;
+        top: 200px;
         right: 10%;
         width: 80px;
         height: 36px;
@@ -200,6 +201,7 @@ const StyledToyPrj = styled.div`
   }
   @media screen and (max-width: 1099px) and (min-width: 980px) {
     width: 100%;
+    padding-top: 100px;
     .toyPrjWrap {
       position: relative;
       width: 800px;
@@ -212,7 +214,7 @@ const StyledToyPrj = styled.div`
       }
       button {
         position: fixed;
-        top: 70px;
+        top: 200px;
         right: 10%;
         width: 80px;
         height: 36px;
@@ -314,6 +316,7 @@ const StyledToyPrj = styled.div`
   }
   @media screen and (max-width: 979px) and (min-width: 580px) {
     width: 100%;
+    padding-top: 100px;
     .toyPrjWrap {
       position: relative;
       width: 570px;
@@ -432,6 +435,7 @@ const StyledToyPrj = styled.div`
   }
   @media screen and (max-width: 579px) and (min-width: 230px) {
     width: 100%;
+    padding-top: 100px;
     .toyPrjWrap {
       position: relative;
       width: 90%;
@@ -448,7 +452,7 @@ const StyledToyPrj = styled.div`
       }
       button {
         position: fixed;
-        top: 70px;
+        top: 200px;
         right: 0;
         width: 70px;
         height: 32px;

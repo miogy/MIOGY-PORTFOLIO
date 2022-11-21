@@ -264,7 +264,7 @@ const ProjectListWrap = styled.div`
       }
       .closeBtn {
         position: fixed;
-        top: 70px;
+        top: 200px;
         right: 10%;
         width: 80px;
         height: 36px;
@@ -398,7 +398,7 @@ const ProjectListWrap = styled.div`
       }
       .closeBtn {
         position: fixed;
-        top: 70px;
+        top: 200px;
         right: 6%;
         width: 60px;
         height: 30px;
@@ -533,7 +533,7 @@ const ProjectListWrap = styled.div`
       }
       .closeBtn {
         position: fixed;
-        top: 70px;
+        top: 200px;
         right: 6%;
         width: 60px;
         height: 30px;
@@ -667,7 +667,7 @@ const ProjectListWrap = styled.div`
       }
       .closeBtn {
         position: fixed;
-        top: 70px;
+        top: 200px;
         right: 6%;
         width: 60px;
         height: 30px;
@@ -803,7 +803,7 @@ const ProjectListWrap = styled.div`
       }
       .closeBtn {
         position: fixed;
-        top: 70px;
+        top: 200px;
         right: 4%;
         width: 60px;
         height: 30px;
@@ -938,7 +938,7 @@ const ProjectListWrap = styled.div`
       }
       .closeBtn {
         position: fixed;
-        top: 60px;
+        top: 200px;
         right: 5%;
         width: 60px;
         height: 30px;

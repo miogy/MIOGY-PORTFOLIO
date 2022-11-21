@@ -5,6 +5,10 @@ function Header() {
   return (
     <HeaderWrap>
       <div className="headerContainer">
+        {/* <img
+          src="https://images.unsplash.com/photo-1468971050039-be99497410af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80"
+          alt="scrollNav"
+        /> */}
         <Link
           to="/"
           className="headerLink"
@@ -12,16 +16,29 @@ function Header() {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <h1>MIOGY</h1>
+          <h1>
+            M<span>IOGY</span>
+          </h1>
         </Link>
-        <div
-          className="headerLink"
-          onClick={() => {
-            window.location.href =
-              "https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:71d57b21-7fc9-3405-92b8-1522d2352ed8";
-          }}
-        >
-          About Me
+        <div className="menu">
+          <Link to="/about" className="navMenu">
+            About
+          </Link>
+          <Link to="/developer" className="navMenu">
+            Developer
+          </Link>
+          <Link to="/design" className="navMenu">
+            Design
+          </Link>
+          {/* <div
+            className="navMenu"
+            onClick={() => {
+              window.location.href =
+                "https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:71d57b21-7fc9-3405-92b8-1522d2352ed8";
+            }}
+          >
+            About Me
+          </div> */}
         </div>
       </div>
     </HeaderWrap>
@@ -35,30 +52,50 @@ const HeaderWrap = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     z-index: 9999;
     .headerContainer {
-      width: 80%;
-      padding: 0 5%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      width: 100%;
       .headerLink {
+        width: 100%;
+        height: 100px;
+        padding: 0;
+        margin: 0 auto;
         text-decoration: none;
         list-style: none;
-        color: #fff;
+        color: #333;
         font-size: 32px;
+        font-weight: 300;
         letter-spacing: -0.16em;
         h1 {
+          width: 100%;
+          height: 120px;
+          padding: 0;
           margin: 0;
-          font: 3rem/60px "Joan", serif;
-          color: #fff;
-          letter-spacing: -0.16em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: "나눔명조", serif;
+          font-size: 4rem;
+          color: #333;
+          font-weight: lighter;
+          letter-spacing: -0.21em;
+          background-color: #fff;
+        }
+      }
+      .menu {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .navMenu {
+          margin: 0 60px;
+          text-decoration: none;
+          list-style: none;
+          color: #333;
+          font-weight: 600;
         }
       }
     }
@@ -85,11 +122,11 @@ const HeaderWrap = styled.div`
     left: 0;
     width: 100%;
     height: 46px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     z-index: 9999;
     .headerContainer {
       width: 80%;
@@ -100,13 +137,33 @@ const HeaderWrap = styled.div`
       .headerLink {
         text-decoration: none;
         list-style: none;
-        color: #fff;
-        font-size: 20px;
-        letter-spacing: -0.16em;
+        color: #333;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: -0.21em;
         h1 {
-          font: 32px "Joan", serif;
-          color: #fff;
+          margin-right: 30px;
+          font-family: "나눔명조", serif;
+          font-size: 32px;
+          font-weight: lighter;
+          color: #333;
           letter-spacing: -0.16em;
+          span {
+            display: none;
+          }
+        }
+      }
+      .menu {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .navMenu {
+          text-decoration: none;
+          list-style: none;
+          color: #333;
+          margin: 0 5%;
         }
       }
     }

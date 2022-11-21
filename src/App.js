@@ -5,6 +5,9 @@ import styled from "styled-components";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Magazine from "./page/Magazine";
+import Info from "./page/AboutPage/Info";
+import Developer from "./page/DeveloperPage/Developer";
+import Design from "./page/DesignPage/Design";
 import ProjectPage from "./page/ProjectPage/ProjectPage";
 
 function App() {
@@ -23,7 +26,12 @@ function App() {
         <Headers className="headerWrap" />
         <Routes className="componentWrap">
           <Route path="/" element={<Main project={projectData} />} />
-          <Route path="/magazine" element={<Magazine />} />
+          <Route path="/about" element={<Info project={projectData} />} />
+          <Route
+            path="/developer"
+            element={<Developer project={projectData} />}
+          />
+          <Route path="/design" element={<Design />} />
           <Route path="/projectpage" element={<ProjectPage />} />
         </Routes>
         <Footer />

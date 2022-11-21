@@ -1,0 +1,35 @@
+.pageWrap {
+  width: 1024px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+.pageTitle {
+  text-align: left;
+  width: 90%;
+  padding: 15px 5%;
+
+  font-weight: 500;
+  color: #333;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.sectionWrap {
+  padding-bottom: 60px;
+}
+.designWrap > ul {
+  padding: 0;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.designWrap > ul > li {
+  text-decoration: none;
+  list-style: none;
+}
+.designWrap > ul > li > img {
+  width: 280px;
+  margin: 15px;
+  border-radius: 15px;
+}

@@ -21,6 +21,7 @@ export default Main;
 const StyledMain = styled.div`
   @media screen and (min-width: 1330px) {
     width: 100%;
+    padding-top: 100px;
     .mainContentWrap {
       width: 90%;
       margin: 0 auto;
