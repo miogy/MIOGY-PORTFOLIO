@@ -1,6 +1,8 @@
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 
-function Category({ tab, setTab }) {
+function Category({ tab, setTab, categoryTab }) {
+  const location = useLocation();
   return (
     <Title>
       <ul
@@ -39,7 +41,7 @@ function Category({ tab, setTab }) {
             setTab(3);
           }}
         >
-          Project,
+          {location.pathname === "/about" ? "" : "Project,"}
         </li>
         <li
           className={`${tab === 4 ? "active" : ""}`}
@@ -47,7 +49,13 @@ function Category({ tab, setTab }) {
             setTab(4);
           }}
         >
-          Toy<span className="hide"> Project</span>,
+          {location.pathname === "/about" ? (
+            ""
+          ) : (
+            <spna>
+              Toy<span className="hide"> Project,</span>
+            </spna>
+          )}
         </li>
       </ul>
     </Title>

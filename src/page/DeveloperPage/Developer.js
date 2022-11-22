@@ -6,11 +6,11 @@ function Developer({ project }) {
   return (
     <div className={styles.pageWrap}>
       <h2 className={styles.pageTitle}>Project</h2>
-      <div className={styles.sectionWrap}>
+      <div className={styles.pageContents}>
         <ProjectCard />
       </div>
       <h2 className={styles.pageTitle}>Toy Project</h2>
-      <div className={styles.sectionWrap}>
+      <div className={styles.pageContents}>
         <ToyProjectCard projectData={project} />
       </div>
     </div>
