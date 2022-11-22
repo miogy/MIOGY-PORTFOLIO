@@ -45,7 +45,7 @@ function Footer() {
             className="pdfLink styleNone footerIcon"
             onClick={() => {
               window.location.href =
-                "https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:adffedc3-1ec3-331e-82f9-018fe1ae2a7e";
+                "https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:efbd7684-3dd5-3a36-a21b-cdc96a407222";
             }}
           >
             <GrDocumentPdf />
