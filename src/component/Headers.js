@@ -5,10 +5,6 @@ function Header() {
   return (
     <HeaderWrap>
       <div className="headerContainer">
-        {/* <img
-          src="https://images.unsplash.com/photo-1468971050039-be99497410af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80"
-          alt="scrollNav"
-        /> */}
         <Link
           to="/"
           className="headerLink"
@@ -30,15 +26,6 @@ function Header() {
           <Link to="/design" className="navMenu">
             Design
           </Link>
-          {/* <div
-            className="navMenu"
-            onClick={() => {
-              window.location.href =
-                "https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:71d57b21-7fc9-3405-92b8-1522d2352ed8";
-            }}
-          >
-            About Me
-          </div> */}
         </div>
       </div>
     </HeaderWrap>

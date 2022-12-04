@@ -34,13 +34,7 @@ function Footer() {
               alt="velog"
             />
           </span>
-          {/* <Link to="/info" className="styleNone footerIcon">
-            <BsBook
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-            />
-          </Link> */}
+
           <span
             className="pdfLink styleNone footerIcon"
             onClick={() => {

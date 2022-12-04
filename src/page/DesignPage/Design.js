@@ -16,7 +16,7 @@ function Design() {
   });
   return (
     <div className={styles.pageWrap}>
-      <h2 className={styles.pageTitle}>ARTWORK</h2>
+      <h2 className={styles.pageTitle}>ARTWORK</h2> <p>Digital Drawing</p>
       <div className={styles.designWrap}>
         <ul>
           {design
@@ -26,6 +26,7 @@ function Design() {
               return (
                 <li key={data.id}>
                   <img
+                    className="designCard"
                     onClick={() => {
                       setModal(true);
                       setId(data.id);

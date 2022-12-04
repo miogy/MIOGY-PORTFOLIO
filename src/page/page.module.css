@@ -32,6 +32,14 @@
     width: 280px;
     margin: 15px;
     border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+  .designWrap > ul > li:hover {
+    scale: 110%;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
   }
   .pageContents {
     width: 90%;
